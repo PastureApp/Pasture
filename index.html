@@ -800,10 +800,103 @@ const QUIZ_DATA=[
 ];
 const NEWS_ITEMS=[{icon:'🌿',title:'Welcome to Pasture!',body:'Thy Christian focus app is live at pastureapp.org. Share it with family and church!'},{icon:'📖',title:'KJV Scripture Throughout',body:'Every verse uses the King James Version — timeless, free, and holy.'},{icon:'😊',title:'Daily Mood Check-In',body:'Each time thou opens the app, share how thou art feeling and receive Scripture tailored just for thee.'},{icon:'🌍',title:'20+ Languages',body:'Pasture now welcomes believers in over 20 languages. More coming soon!'}];
 
+// ===== FRUIT STUDY DATA =====
+const FRUIT_STUDIES={
+  Love:{
+    name:'Love',emoji:'❤️',seedName:'Love Seeds',needed:25,color:'#e05a7a',
+    verse:'Galatians 5:22',
+    desc:'Love is the first and greatest fruit. It is not an emotion — it is a choice, a commitment, an action rooted in God Himself.',
+    people:[{name:'Ruth',desc:'Showed sacrificial love to Naomi — "Where thou goest, I will go." — Ruth 1:16'},{name:'Jesus',desc:'The ultimate example of love — laying down His life for us. John 15:13'},{name:'The Prodigal\'s Father',desc:'Ran to meet his returning son — a picture of God\'s love for us. Luke 15:20'}],
+    passages:[
+      {ref:'1 Corinthians 13:1-8',title:'The Love Chapter',seeds:4,summary:'Paul describes the nature of true love — patient, kind, not jealous or boastful. Without love, all gifts are empty.',quiz:[
+        {type:'verse',ref:'1 Corinthians 13:4',correct:'"Charity suffereth long, and is kind; charity envieth not."',options:['"Charity suffereth long, and is kind; charity envieth not."','"Love is strong as death."','"Greater love hath no man than this."','"God is love."'],explain:'1 Corinthians 13:4 — The word "charity" in KJV means love. It suffers long and is kind.'},
+        {type:'ref',verse:'"And now abideth faith, hope, charity, these three; but the greatest of these is charity."',correct:'1 Corinthians 13:13',options:['1 Corinthians 13:13','1 John 4:8','Romans 5:8','John 3:16'],explain:'Paul places love above even faith and hope — it is the greatest of all virtues.'},
+      ]},
+      {ref:'John 15:9-17',title:'Abide in My Love',seeds:4,summary:'Jesus commands us to abide in His love by keeping His commandments — and to love one another as He has loved us.',quiz:[
+        {type:'people',question:'What does Jesus say is the greatest act of love?',correct:'Laying down your life for friends',options:['Laying down your life for friends','Giving money to the poor','Praying without ceasing','Forgiving your enemies'],explain:'John 15:13 — "Greater love hath no man than this, that a man lay down his life for his friends."'},
+        {type:'fill',before:'This is my commandment, That ye love one another, as I have',blank:'loved',after:' you.',ref:'John 15:12',explain:'Jesus sets Himself as the standard — love one another as He has loved us.'},
+      ]},
+      {ref:'1 John 4:7-21',title:'God Is Love',seeds:4,summary:'John reveals the source of all love — God Himself. We love because He first loved us.',quiz:[
+        {type:'ref',verse:'"He that loveth not knoweth not God; for God is love."',correct:'1 John 4:8',options:['1 John 4:8','John 3:16','Romans 8:39','1 Cor 13:4'],explain:'This is one of the most profound statements in Scripture — God does not just have love, He IS love.'},
+        {type:'verse',ref:'1 John 4:19',correct:'"We love him, because he first loved us."',options:['"We love him, because he first loved us."','"God commendeth his love toward us."','"Perfect love casteth out fear."','"Love is the fulfilling of the law."'],explain:'Our capacity to love at all comes from God\'s love toward us. He initiated it.'},
+      ]},
+      {ref:'Romans 8:35-39',title:'Nothing Can Separate Us',seeds:4,summary:'Paul declares that neither death nor life nor any power can separate us from God\'s love in Christ Jesus.',quiz:[
+        {type:'story',question:'According to Romans 8:38-39, which of these CAN separate us from God\'s love?',correct:'None of them can',options:['None of them can','Death','Angels','Things present'],explain:'Romans 8:38-39 — NOTHING shall be able to separate us from the love of God in Christ Jesus.'},
+        {type:'ref',verse:'"Who shall separate us from the love of Christ? shall tribulation, or distress, or persecution?"',correct:'Romans 8:35',options:['Romans 8:35','Romans 5:8','John 15:9','1 John 4:16'],explain:'Paul lists every possible threat — and none of them can break God\'s love for us.'},
+      ]},
+      {ref:'Ruth 1:14-18',title:'Ruth\'s Loyal Love',seeds:4,summary:'Ruth\'s love for Naomi is one of Scripture\'s most beautiful pictures of loyal, self-sacrificing love.',quiz:[
+        {type:'people',question:'Who said "Where thou goest, I will go; and where thou lodgest, I will lodge"?',correct:'Ruth',options:['Ruth','Naomi','Orpah','Esther'],explain:'Ruth 1:16 — Ruth\'s declaration to Naomi is one of the most beloved expressions of loyal love in Scripture.'},
+        {type:'story',question:'What did Orpah do when Naomi told both daughters-in-law to return to their homes?',correct:'She kissed Naomi and returned',options:['She kissed Naomi and returned','She stayed with Naomi','She wept and refused to leave','She went to find a new husband'],explain:'Ruth 1:14 — Orpah kissed Naomi and returned, but Ruth cleaved unto her.'},
+      ]},
+      {ref:'Luke 15:11-24',title:'The Father\'s Love',seeds:5,summary:'The Parable of the Prodigal Son shows us a father — a picture of God — who runs to meet his returning son. This is how God loves us.',quiz:[
+        {type:'story',question:'What did the father do when he saw his son returning from far away?',correct:'He ran and fell on his neck and kissed him',options:['He ran and fell on his neck and kissed him','He waited at the door','He sent a servant to greet him','He called his other son to go meet him'],explain:'Luke 15:20 — He ran. God does not wait passively — He runs toward those who return to Him.'},
+        {type:'people',question:'In the Parable of the Prodigal Son, who represents God\'s love for us?',correct:'The father',options:['The father','The elder son','The prodigal son','The servants'],explain:'The father is a picture of God — full of compassion, running to meet us, restoring us fully.'},
+        {type:'fill',before:'And he arose, and came to his father. But when he was yet a great way off, his father saw him, and had',blank:'compassion',after:' , and ran, and fell on his neck, and kissed him.',ref:'Luke 15:20',explain:'Compassion — this is love in action. The father felt deeply, then acted immediately.'},
+      ]},
+    ]
+  },
+  Joy:{
+    name:'Joy',emoji:'😊',seedName:'Joy Seeds',needed:22,color:'#e0a020',
+    verse:'Galatians 5:22',
+    desc:'Joy is not happiness that depends on circumstances — it is a deep, settled delight in God that remains even in suffering.',
+    people:[{name:'Paul & Silas',desc:'Sang hymns at midnight in prison — joy that transcends circumstances. Acts 16:25'},{name:'Mary',desc:'Magnified the Lord with joyful song — "My soul doth magnify the Lord." Luke 1:46'},{name:'David',desc:'"I will be glad and rejoice in thee." — Psalm 9:2'}],
+    passages:[
+      {ref:'Philippians 4:4-7',title:'Rejoice Always',seeds:4,summary:'Paul writes "Rejoice in the Lord alway" — from prison. Joy in Scripture is not based on circumstances.',quiz:[
+        {type:'fill',before:'Rejoice in the Lord',blank:'alway',after:': and again I say, Rejoice.',ref:'Philippians 4:4',explain:'Paul repeats "rejoice" for emphasis. This is a command, not a feeling — it is a choice rooted in who God is.'},
+        {type:'ref',verse:'"And the peace of God, which passeth all understanding, shall keep your hearts and minds through Christ Jesus."',correct:'Philippians 4:7',options:['Philippians 4:7','John 14:27','Isaiah 26:3','Romans 15:13'],explain:'The peace of God — which surpasses human logic — guards our hearts when we choose to rejoice.'},
+      ]},
+      {ref:'Psalm 16:8-11',title:'Fullness of Joy',seeds:4,summary:'David declares that in God\'s presence is fullness of joy — and at His right hand are pleasures forevermore.',quiz:[
+        {type:'ref',verse:'"In thy presence is fulness of joy; at thy right hand there are pleasures for evermore."',correct:'Psalm 16:11',options:['Psalm 16:11','Psalm 23:6','John 15:11','Philippians 4:4'],explain:'True joy is found in God\'s presence — not in possessions, circumstances, or achievements.'},
+        {type:'people',question:'Who wrote "I have set the LORD always before me: because he is at my right hand, I shall not be moved"?',correct:'David',options:['David','Solomon','Moses','Isaiah'],explain:'Psalm 16:8 — David kept God before him always. This was the secret of his deep joy.'},
+      ]},
+      {ref:'John 15:11',title:'My Joy in You',seeds:4,summary:'Jesus says He tells us about abiding in His love so that His joy might remain in us and our joy might be full.',quiz:[
+        {type:'verse',ref:'John 15:11',correct:'"These things have I spoken unto you, that my joy might remain in you, and that your joy might be full."',options:['"These things have I spoken unto you, that my joy might remain in you, and that your joy might be full."','"I am the vine, ye are the branches."','"Greater love hath no man than this."','"Ask, and ye shall receive, that your joy may be full."'],explain:'Jesus desires our joy to be FULL — not partial, not temporary. He is the source of complete joy.'},
+        {type:'story',question:'According to John 15, what must we do to abide in Jesus and experience His joy?',correct:'Keep His commandments',options:['Keep His commandments','Fast and pray','Give to the poor','Read Scripture daily'],explain:'John 15:10 — "If ye keep my commandments, ye shall abide in my love... that your joy might be full."'},
+      ]},
+      {ref:'Acts 16:22-25',title:'Singing in Prison',seeds:5,summary:'Paul and Silas, beaten and imprisoned, prayed and sang hymns at midnight. Their joy was unshakeable because it was not based on comfort.',quiz:[
+        {type:'people',question:'Who sang hymns to God at midnight while in prison with stocks on their feet?',correct:'Paul and Silas',options:['Paul and Silas','Peter and John','Daniel','Shadrach and Meshach'],explain:'Acts 16:25 — Paul and Silas prayed and sang praises to God. The other prisoners heard them.'},
+        {type:'story',question:'What happened when Paul and Silas sang and prayed in prison?',correct:'An earthquake opened all the prison doors',options:['An earthquake opened all the prison doors','An angel appeared to them','The guards fell asleep','They were immediately released'],explain:'Acts 16:26 — A great earthquake shook the prison, all doors opened, and every chain was loosed.'},
+      ]},
+      {ref:'Psalm 30:5',title:'Joy Comes in the Morning',seeds:5,summary:'David declares that weeping may last through the night — but joy comes in the morning. Sorrow is temporary; God\'s joy is eternal.',quiz:[
+        {type:'ref',verse:'"Weeping may endure for a night, but joy cometh in the morning."',correct:'Psalm 30:5',options:['Psalm 30:5','Isaiah 40:31','Lamentations 3:22','Romans 8:28'],explain:'This verse holds two truths: pain is real (weeping endures), but it is not final. Joy comes.'},
+        {type:'fill',before:'Thou hast turned for me my mourning into',blank:'dancing',after:': thou hast put off my sackcloth, and girded me with gladness.',ref:'Psalm 30:11',explain:'God transforms mourning into dancing — this is the miracle of His joy in our lives.'},
+      ]},
+    ]
+  },
+  Peace:{
+    name:'Peace',emoji:'🕊️',seedName:'Peace Seeds',needed:22,color:'#3a8ab0',
+    verse:'Galatians 5:22',
+    desc:'Peace in Scripture is not the absence of trouble — it is the presence of God in the middle of it. Shalom — completeness, wholeness, well-being.',
+    people:[{name:'Jesus',desc:'Slept in the storm on the boat — perfect peace in the midst of chaos. Mark 4:38'},{name:'Isaiah',desc:'Prophesied "Thou wilt keep him in perfect peace whose mind is stayed on thee." Isa 26:3'}],
+    passages:[
+      {ref:'Philippians 4:6-7',title:'The Peace That Passes Understanding',seeds:5,summary:'Paul instructs us to bring everything to God in prayer — and the result is a peace that surpasses human logic.',quiz:[
+        {type:'fill',before:'Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto',blank:'God',after:'.',ref:'Philippians 4:6',explain:'"Be careful for nothing" means "be anxious for nothing." The antidote to anxiety is prayer with thanksgiving.'},
+        {type:'ref',verse:'"And the peace of God, which passeth all understanding, shall keep your hearts and minds through Christ Jesus."',correct:'Philippians 4:7',options:['Philippians 4:7','John 14:27','Isaiah 26:3','Psalm 23:2'],explain:'This peace is described as passing all understanding — it cannot be explained logically, only experienced.'},
+      ]},
+      {ref:'John 14:27',title:'Peace I Leave With You',seeds:4,summary:'Jesus gives His disciples peace before going to the cross — not as the world gives, but a deep, supernatural peace.',quiz:[
+        {type:'verse',ref:'John 14:27',correct:'"Peace I leave with you, my peace I give unto you: not as the world giveth, give I unto you."',options:['"Peace I leave with you, my peace I give unto you: not as the world giveth, give I unto you."','"Be still, and know that I am God."','"The peace of God passeth all understanding."','"I will keep him in perfect peace."'],explain:'The world gives peace through comfort and safety. Jesus gives peace through His presence — even in danger.'},
+        {type:'story',question:'What does Jesus tell His disciples NOT to do after giving them His peace?',correct:'Let not your heart be troubled, neither be afraid',options:['Let not your heart be troubled, neither be afraid','Weep','Doubt His resurrection','Leave Jerusalem'],explain:'John 14:27 — "Let not your heart be troubled, neither let it be afraid." Peace is a choice to trust.'},
+      ]},
+      {ref:'Isaiah 26:3',title:'Perfect Peace',seeds:4,summary:'God promises perfect peace — literally "peace peace" in Hebrew, the deepest peace — to those whose minds are stayed on Him.',quiz:[
+        {type:'fill',before:'Thou wilt keep him in perfect peace, whose mind is',blank:'stayed',after:' on thee: because he trusteth in thee.',ref:'Isaiah 26:3',explain:'"Stayed" means anchored, fixed, settled. A mind anchored on God receives His perfect peace.'},
+        {type:'people',question:'Who wrote the prophecy "Thou wilt keep him in perfect peace, whose mind is stayed on thee"?',correct:'Isaiah',options:['Isaiah','David','Paul','Solomon'],explain:'Isaiah 26:3 — Isaiah prophesied this promise hundreds of years before Christ. It remains true today.'},
+      ]},
+      {ref:'Mark 4:35-41',title:'Peace in the Storm',seeds:4,summary:'Jesus sleeps in the storm — and with three words "Peace, be still" — silences wind and sea. He is our peace in every storm.',quiz:[
+        {type:'story',question:'What did Jesus say to calm the storm on the sea?',correct:'"Peace, be still"',options:['"Peace, be still"','"Fear not, only believe"','"Be not afraid"','"It is I, be not afraid"'],explain:'Mark 4:39 — Jesus rebuked the wind and said "Peace, be still" — and there was a great calm immediately.'},
+        {type:'people',question:'Where was Jesus when the storm arose on the sea?',correct:'Asleep in the back of the ship',options:['Asleep in the back of the ship','Praying on the shore','Walking on water','Standing at the bow'],explain:'Mark 4:38 — Jesus was asleep on a pillow in the back of the ship. His rest in the storm reveals perfect trust in the Father.'},
+      ]},
+      {ref:'Romans 5:1',title:'Peace With God',seeds:5,summary:'Through faith in Jesus Christ, we have been justified — and now have peace with God. This is the foundation of all other peace.',quiz:[
+        {type:'ref',verse:'"Therefore being justified by faith, we have peace with God through our Lord Jesus Christ."',correct:'Romans 5:1',options:['Romans 5:1','Ephesians 2:14','Colossians 3:15','Isaiah 53:5'],explain:'Peace with God comes through justification by faith — we are declared righteous and the war between us and God ends.'},
+        {type:'story',question:'According to Romans 5:1, through whom do we have peace with God?',correct:'Our Lord Jesus Christ',options:['Our Lord Jesus Christ','The Holy Spirit','Our own righteousness','The law of Moses'],explain:'Romans 5:1 — Peace with God is only possible through Jesus Christ, who reconciled us to the Father.'},
+      ]},
+    ]
+  },
+};
+
 // ===== STATE =====
 function loadS(){
   try{const s=localStorage.getItem('pasture_v7');if(s){const d=JSON.parse(s);PATHS.forEach((p,pi)=>{if(d.paths&&d.paths[pi])d.paths[pi].chapters.forEach((c,ci)=>{if(PATHS[pi].chapters[ci])PATHS[pi].chapters[ci].done=c.done;});});d.paths=PATHS;d.fruits=d.fruits||FRUITS.map(f=>({...f}));d.seasons=d.seasons||SEASONS.map(s=>({...s,areas:s.areas.map(a=>({n:a.n,i:a.i,done:false})),unlocked:s.unlockAt===0}));return d;}}catch(e){}
-  return{fruits:FRUITS.map(f=>({...f})),seasons:SEASONS.map(s=>({...s,areas:s.areas.map(a=>({n:a.n,i:a.i,done:false})),unlocked:s.unlockAt===0})),activeSeason:'scripture',paths:PATHS,streaks:{prayer:0,scripture:0,quiet:0},total:0,week:0,history:[],lastVisit:null,seeds:0,owned:{themes:['meadow'],paths:[]},equipped:{theme:'meadow'},achievements:[],settings:{sounds:true,grace:true,theme:'meadow'},quizCorrect:0,quizStreak:0,group:null,lang:'en',name:'',firstOpen:true};
+  return{fruits:FRUITS.map(f=>({...f})),seasons:SEASONS.map(s=>({...s,areas:s.areas.map(a=>({n:a.n,i:a.i,done:false})),unlocked:s.unlockAt===0})),activeSeason:'scripture',paths:PATHS,streaks:{prayer:0,scripture:0,quiet:0},total:0,week:0,history:[],lastVisit:null,seeds:0,owned:{themes:['meadow'],paths:[]},equipped:{theme:'meadow'},achievements:[],settings:{sounds:true,grace:true,theme:'meadow'},quizCorrect:0,quizStreak:0,group:null,lang:'en',name:'',firstOpen:true,fruitSeeds:{},fruitPassages:{}};
 }
 let S=loadS();
 function save(){try{localStorage.setItem('pasture_v7',JSON.stringify(S));}catch(e){}}
@@ -971,7 +1064,21 @@ const PAGE_TITLES={garden:'🍇 Garden',challenge:'📝 Bible Challenge',paths:'
 function openPage(name){closeMenu();document.getElementById('poTitle').textContent=PAGE_TITLES[name]||name;document.getElementById('poBody').innerHTML=buildPage(name);document.getElementById('pageOL').classList.add('open');}
 function closePage(){document.getElementById('pageOL').classList.remove('open');}
 function buildPage(n){if(n==='garden')return bGarden();if(n==='challenge')return bChallenge();if(n==='paths')return bPaths();if(n==='friends')return bFriends();if(n==='achievements')return bAch();if(n==='store')return bStore();if(n==='settings')return bSettings();if(n==='news')return bNews();return '';}
-function bGarden(){const fg=S.fruits.map(f=>{const u=f.sessions>=f.needed;const p=Math.min(100,Math.round(f.sessions/f.needed*100));return'<div class="fb '+(u?'ok':'')+'"><span class="fbi">'+f.emoji+'</span><div class="fbn">'+f.name+'</div><div class="fbp">'+(u?'✨':p+'%')+'</div><div class="progress-wrap"><div class="progress-fill" style="width:'+p+'%"></div></div></div>';}).join('');const sc=S.seasons.map((s,si)=>{const isA=s.id===S.activeSeason;const d=s.areas.filter(a=>a.done).length;const p=Math.round(d/s.areas.length*100);const ar=s.areas.map((a,ai)=>'<div class="fa '+(a.done?'done':'')+'" style="background:'+s.bg+';border-color:'+(a.done?s.color:'transparent')+';color:'+s.color+'" onclick="'+(s.unlocked?'toggleArea('+si+','+ai+')':'')+'">'+(a.i)+' '+(a.n)+(a.done?' ✓':'')+'</div>').join('');return'<div class="sc '+(s.unlocked?'':'locked')+'" style="'+(s.unlocked?'background:'+s.bg+';border-color:'+s.color:'')+'"><div class="sc-head"><span>'+s.icon+'</span><div style="flex:1"><div class="sc-name">'+s.name+'</div><div class="sc-sub">'+s.sub+'</div></div><div class="sc-btns">'+(s.unlocked&&!isA?'<button class="sc-act" onclick="activateSeason(\''+s.id+'\')">Set Active</button>':'')+(!s.unlocked?'<button class="sc-buy" onclick="buySeason('+si+')">🌱 50</button>':'')+(isA?'<span style="font-size:0.6rem;font-weight:800;color:'+s.color+'">● Active</span>':'')+'</div></div>'+(s.unlocked?'<div class="fa-wrap">'+ar+'</div><div class="sc-hint">'+s.how+'</div><div class="progress-wrap" style="margin-top:4px"><div class="progress-fill" style="width:'+p+'%;background:'+s.color+'"></div></div>':'<div class="sc-hint">Complete '+s.unlockAt+' sessions or spend 🌱 50.</div>')+'</div>';}).join('');return'<div class="card"><div class="card-title">Fruits of the Spirit</div><p style="font-size:0.68rem;color:var(--text-soft);margin-bottom:9px;font-family:\'Lora\',serif;font-style:italic">"But the fruit of the Spirit is love, joy, peace, longsuffering, gentleness, goodness, faith, meekness, temperance." — Galatians 5:22-23 KJV</p><div class="fruit-grid">'+fg+'</div></div><div class="section-lbl">Seasons of Focus</div>'+sc;}
+function bGarden(){
+  const fg=S.fruits.map((f,fi)=>{
+    const studyKey=f.name;
+    const study=FRUIT_STUDIES[studyKey];
+    const fruitSeedsEarned=(S.fruitSeeds&&S.fruitSeeds[studyKey])||0;
+    const needed=study?study.needed:f.needed;
+    const unlocked=study?(fruitSeedsEarned>=needed):(f.sessions>=f.needed);
+    const pct=study?Math.min(100,Math.round(fruitSeedsEarned/needed*100)):Math.min(100,Math.round(f.sessions/f.needed*100));
+    const emoji=study?study.emoji:f.emoji;
+    const col=study?study.color:'var(--sage-dark)';
+    return'<div class="fb '+(unlocked?'ok':'')+'" onclick="'+(study?'openFruitStudy(\''+studyKey+'\')':'')+'" style="'+(study?'cursor:pointer;':'')+'border-color:'+(unlocked?col:'transparent')+'"><span class="fbi" style="'+(unlocked?'filter:none;opacity:1':'filter:grayscale(1);opacity:0.35')+'">'+emoji+'</span><div class="fbn" style="'+(unlocked?'color:'+col:'')+'">'+ f.name+'</div>'+(study?'<div class="fbp" style="color:'+col+'">'+(unlocked?'✨':fruitSeedsEarned+'/'+needed+' 🌱')+'</div>':'<div class="fbp">'+(unlocked?'✨':pct+'%')+'</div>')+'<div class="progress-wrap"><div class="progress-fill" style="width:'+pct+'%;background:'+col+'"></div></div>'+(study?'<div style="font-size:0.44rem;color:var(--text-soft);margin-top:2px">Tap to Study</div>':'')+'</div>';
+  }).join('');
+  const sc=S.seasons.map((s,si)=>{const isA=s.id===S.activeSeason;const d=s.areas.filter(a=>a.done).length;const p=Math.round(d/s.areas.length*100);const ar=s.areas.map((a,ai)=>'<div class="fa '+(a.done?'done':'')+'" style="background:'+s.bg+';border-color:'+(a.done?s.color:'transparent')+';color:'+s.color+'" onclick="'+(s.unlocked?'toggleArea('+si+','+ai+')':'')+'">'+(a.i)+' '+(a.n)+(a.done?' ✓':'')+'</div>').join('');return'<div class="sc '+(s.unlocked?'':'locked')+'" style="'+(s.unlocked?'background:'+s.bg+';border-color:'+s.color:'')+';border-radius:12px;padding:10px;border:1.5px solid transparent;margin-bottom:7px"><div class="sc-head"><span>'+s.icon+'</span><div style="flex:1"><div class="sc-name">'+s.name+'</div><div class="sc-sub">'+s.sub+'</div></div><div class="sc-btns">'+(s.unlocked&&!isA?'<button class="sc-act" onclick="activateSeason(\''+s.id+'\')">Set Active</button>':'')+(!s.unlocked?'<button class="sc-buy" onclick="buySeason('+si+')">🌱 50</button>':'')+(isA?'<span style="font-size:0.6rem;font-weight:800;color:'+s.color+'">● Active</span>':'')+'</div></div>'+(s.unlocked?'<div class="fa-wrap">'+ar+'</div><div class="sc-hint">'+s.how+'</div><div class="progress-wrap" style="margin-top:4px"><div class="progress-fill" style="width:'+p+'%;background:'+s.color+'"></div></div>':'<div class="sc-hint">Complete '+s.unlockAt+' sessions or spend 🌱 50.</div>')+'</div>';}).join('');
+  return'<div class="card"><div class="card-title">🌸 Fruits of the Spirit</div><p style="font-size:0.68rem;color:var(--text-soft);margin-bottom:5px;font-family:\'Lora\',serif;font-style:italic">\"But the fruit of the Spirit is love, joy, peace, longsuffering, gentleness, goodness, faith, meekness, temperance.\" — Galatians 5:22-23 KJV</p><p style="font-size:0.64rem;color:var(--sage-dark);margin-bottom:9px;font-weight:700">🌱 Tap any fruit to study Scripture and grow it!</p><div class="fruit-grid">'+fg+'</div></div><div class="section-lbl">Seasons of Focus</div>'+sc;
+}
 function toggleArea(si,ai){S.seasons[si].areas[ai].done=!S.seasons[si].areas[ai].done;save();openPage('garden');}
 function activateSeason(id){S.activeSeason=id;save();openPage('garden');}
 function buySeason(si){if(S.seeds<50){showToast('Not enough seeds!');return;}S.seeds-=50;S.seasons[si].unlocked=true;save();openPage('garden');updAll();}
@@ -1002,7 +1109,7 @@ function bChallenge(){
   if(q.type==='ref'){
     h+=`<div class="quiz-type-badge">Choose the Reference</div><div class="quiz-question">${q.verse}</div><div class="quiz-options">${q.options.map((o,i)=>`<button class="quiz-opt" id="qo${i}" onclick="ansRef('${o}','${q.correct}',${i},'${(q.explain||'').replace(/'/g,"\\'")}',${JSON.stringify(q.options).replace(/'/g,"\\'")})">${o}</button>`).join('')}</div>`;
   } else if(q.type==='verse'){
-    h+=`<div class="quiz-type-badge">Choose the Verse</div><div class="quiz-ref-big">${q.ref}</div><div class="quiz-options">${q.options.map((o,i)=>`<button class="quiz-opt" id="qo${i}" onclick="ansVerse(${i})">${o}</button>`).join('')}</div>`;
+    h+=`<div class="quiz-type-badge">Choose the Verse</div><div class="quiz-ref-big">${q.ref}</div><div class="quiz-options">${q.options.map((o,i)=>`<button class="quiz-opt" id="qo${i}" onclick="ansVerse('${o.replace(/'/g,"\\'").replace(/"/g,'&quot;')}','${q.correct.replace(/'/g,"\\'").replace(/"/g,'&quot;')}',${i},'${(q.explain||'').replace(/'/g,"\\'")}',${JSON.stringify(q.options).replace(/'/g,"\\'")})">${o}</button>`).join('')}</div>`;
   } else if(q.type==='fill'){
     h+=`<div class="quiz-type-badge">Fill in the Blank</div><div class="quiz-question">"${q.before} <span style="background:var(--gold-light);padding:0 6px;border-radius:3px;font-style:normal">_______</span> ${q.after}"<br/><span style="font-size:0.66rem;color:var(--text-soft);font-style:normal">${q.ref}</span></div><input class="quiz-fill-input" id="fillIn" placeholder="Type the missing word..."/><div style="text-align:center"><button class="btn-primary" onclick="ansFill('${q.blank}','${(q.explain||'').replace(/'/g,"\\'")}')">Check Answer</button></div>`;
   } else if(q.type==='people'||q.type==='places'||q.type==='numbers'||q.type==='story'){
@@ -1040,22 +1147,12 @@ function ansRef(chosen,correct,idx,explain,optionsJson){
   markQ(idx,ok,correct,opts);
   showQR(ok,correct,explain);
 }
-function ansVerse(idx){
+function ansVerse(chosen,correct,idx,explain,optionsJson){
   if(qAns)return;qAns=true;
-  const q=QUIZ_DATA.find(q=>q.type==='verse'&&q.options&&q.options[idx]);
-  // Find current question from page
-  const allV=QUIZ_DATA.filter(q=>q.type==='verse');
-  // Use stored curQ approach
-  const opts=document.querySelectorAll('.quiz-opt');
-  const optsArr=Array.from(opts).map(o=>o.textContent);
-  const correct=optsArr.find((o,i)=>{
-    const btn=document.getElementById('qo'+i);
-    return btn&&btn.dataset&&false; // fallback
-  });
-  // Better: just check against all verse questions
-  let found=null;
-  for(const qq of QUIZ_DATA){if(qq.type==='verse'&&qq.options&&optsArr.join('|')===qq.options.join('|')){found=qq;break;}}
-  if(found){const ok=found.options[idx]===found.correct;markQ(idx,ok,found.correct,found.options);showQR(ok,found.correct,found.explain||'');}
+  let opts;try{opts=JSON.parse(optionsJson);}catch(e){opts=[];}
+  const ok=chosen===correct;
+  markQ(idx,ok,correct,opts);
+  showQR(ok,correct,explain);
 }
 function ansGeneral(chosen,correct,idx,explain,optionsJson){
   if(qAns)return;qAns=true;
@@ -1127,6 +1224,104 @@ function bStore(){
   return '<div style="text-align:center;margin-bottom:14px"><div style="font-family:\'Lora\',serif;font-style:italic;font-size:0.76rem;color:var(--text-soft);margin-bottom:8px">\"Whatsoever a man soweth, that shall he also reap.\" — Galatians 6:7</div><div class="seed-chip" style="font-size:0.86rem;padding:6px 18px">🌱 '+S.seeds+' seeds available</div></div><div class="section-lbl">🎨 Visual Themes</div><div class="store-grid" style="margin-bottom:14px">'+ts+'</div><div class="section-lbl">🍂 Seasons of Focus</div><div class="store-grid" style="margin-bottom:14px">'+ss+'</div><div class="section-lbl">🛤️ Wisdom Paths</div><div class="store-grid" style="margin-bottom:14px">'+ps+'</div><div style="background:linear-gradient(135deg,rgba(212,168,83,0.1),rgba(240,208,144,0.07));border-radius:14px;padding:14px;text-align:center;border:1px solid rgba(212,168,83,0.2)"><div style="font-size:1.2rem;margin-bottom:5px">🌱</div><div style="font-family:\'Lora\',serif;font-size:0.82rem;font-weight:700;color:var(--earth);margin-bottom:4px">How to earn seeds</div><div style="font-size:0.72rem;color:var(--text-soft);line-height:1.6">Complete focus sessions (8-20 seeds)<br/>Answer Bible quiz (+5 right, +1 for trying)<br/>Earn achievements (bonus seeds)</div></div>';
 }
 
+function buyTheme(id){const th=THEMES.find(x=>x.id===id);if(!th)return;if(S.owned.themes.includes(id)){S.equipped.theme=id;S.settings.theme=id;applyTheme(id);save();openPage('store');showToast('🎨 '+th.name+' applied!');}else if(S.seeds>=th.cost){S.seeds-=th.cost;S.owned.themes.push(id);S.equipped.theme=id;S.settings.theme=id;applyTheme(id);save();openPage('store');updAll();showToast('🎨 '+th.name+' unlocked!');}else showToast('Not enough seeds — keep sowing! 🌱');}
+function bSettings(){return'<div class="card"><div class="card-title">⚙️ Preferences</div><div class="set-item"><div><div class="set-lbl">Sounds & Bell</div><div class="set-sub">Gentle bell when timer ends</div></div><div class="toggle '+(S.settings.sounds?'on':'')+'" onclick="togS(\'sounds\')"></div></div><div class="set-item"><div><div class="set-lbl">Grace Mode</div><div class="set-sub">Encouraging language, no guilt</div></div><div class="toggle '+(S.settings.grace?'on':'')+'" onclick="togS(\'grace\')"></div></div></div><div class="card"><div class="card-title">🎨 Theme</div><div class="theme-grid">'+THEMES.map(th=>'<div class="theme-opt '+(S.equipped.theme===th.id?'on':'')+'" onclick="buyTheme(\''+th.id+'\')">'+th.icon+'<br/>'+th.name+'</div>').join('')+'</div></div><div class="card"><div class="card-title">🌍 Language</div><div style="display:flex;flex-direction:column;gap:6px">'+LANGUAGES.slice(0,8).map(l=>'<button style="padding:8px 12px;border-radius:9px;border:1.5px solid '+(S.lang===l.code?'var(--moss)':'rgba(180,150,100,0.22)')+';background:'+(S.lang===l.code?'rgba(61,94,63,0.08)':'white')+';cursor:pointer;display:flex;align-items:center;gap:8px;font-family:\'Nunito\',sans-serif;font-size:0.78rem;font-weight:700;color:var(--text-mid)" onclick="changeLang(\''+l.code+'\')"><span>'+l.flag+'</span>'+l.name+'</button>').join('')+'</div></div><div class="card" style="cursor:pointer" onclick="resetAll()"><div style="display:flex;align-items:center;justify-content:space-between"><div><div class="set-lbl" style="color:#c04848">Reset All Data</div><div class="set-sub">Clear progress and start fresh</div></div><span>🗑️</span></div></div><div style="text-align:center;margin-top:14px;font-family:\'Lora\',serif;font-style:italic;font-size:0.7rem;color:var(--text-soft)">"His mercies are new every morning." — Lamentations 3:23 KJV</div>';}
+function togS(k){S.settings[k]=!S.settings[k];save();openPage('settings');}
+function changeLang(code){S.lang=code;curLang=code;save();applyLangToApp();openPage('settings');showToast('Language updated! 🌍');}
+function resetAll(){if(confirm('Reset all thy progress?')){localStorage.removeItem('pasture_v7');location.reload();}}
+function bNews(){return NEWS_ITEMS.map(n=>'<div class="news-item"><div class="ni-icon">'+n.icon+'</div><div class="ni-title">'+n.title+'</div><div class="ni-body">'+n.body+'</div></div>').join('');}
+function showToast(msg){const el=document.getElementById('toast');el.textContent=msg;el.classList.add('show');setTimeout(()=>el.classList.remove('show'),2800);}
+
+// FRUIT STUDY SYSTEM
+let fruitStudyState={fruitKey:null,passageIdx:0,quizMode:false,quizIdx:0,quizAnswered:false,sessionCorrect:0,sessionTotal:0};
+function openFruitStudy(fruitKey){
+  const study=FRUIT_STUDIES[fruitKey];
+  if(!study){showToast('This fruit study is coming soon! 🌱');return;}
+  fruitStudyState={fruitKey,passageIdx:0,quizMode:false,quizIdx:0,quizAnswered:false,sessionCorrect:0,sessionTotal:0};
+  document.getElementById('poTitle').textContent=study.emoji+' '+study.name+' Study';
+  document.getElementById('poBody').innerHTML=buildFruitStudyPage(fruitKey);
+  document.getElementById('pageOL').classList.add('open');
+}
+function buildFruitStudyPage(key){
+  const study=FRUIT_STUDIES[key];
+  if(!study)return'<div style="padding:20px;text-align:center;color:var(--text-soft)">Study coming soon!</div>';
+  if(fruitStudyState.quizMode)return buildFruitQuiz(key);
+  const pi=fruitStudyState.passageIdx;
+  const passage=study.passages[pi];
+  if(!passage||pi>=study.passages.length)return buildPassageComplete(key);
+  const fruitSeedsEarned=(S.fruitSeeds&&S.fruitSeeds[key])||0;
+  const pct=Math.min(100,Math.round(fruitSeedsEarned/study.needed*100));
+  const passKey=key+'_'+pi;
+  const done=(S.fruitPassages&&S.fruitPassages[passKey])||false;
+  return'<div style="background:'+study.color+'22;border-radius:14px;padding:13px;margin-bottom:13px;border:1.5px solid '+study.color+'44"><div style="display:flex;align-items:center;gap:8px;margin-bottom:5px"><span style="font-size:1.5rem">'+study.emoji+'</span><div><div style="font-family:\'Lora\',serif;font-size:0.9rem;font-weight:700;color:'+study.color+'">'+study.name+' — '+study.seedName+'</div><div style="font-size:0.6rem;color:var(--text-soft)">'+fruitSeedsEarned+'/'+study.needed+' seeds planted • '+pct+'% grown</div></div></div><div class="progress-wrap"><div class="progress-fill" style="width:'+pct+'%;background:'+study.color+'"></div></div></div>'+'<div style="display:flex;gap:5px;overflow-x:auto;margin-bottom:12px;padding-bottom:3px;scrollbar-width:none">'+study.passages.map((p,i)=>{const dk=key+'_'+i;const d=(S.fruitPassages&&S.fruitPassages[dk])||false;return'<div onclick="fruitStudyState.passageIdx='+i+';document.getElementById(\'poBody\').innerHTML=buildFruitStudyPage(\''+key+'\')" style="flex-shrink:0;padding:4px 9px;border-radius:18px;border:1.5px solid '+(i===pi?study.color:'rgba(180,150,100,0.2)')+';background:'+(i===pi?study.color+'22':'white')+';cursor:pointer;font-size:0.6rem;font-weight:700;color:'+(i===pi?study.color:'var(--text-soft)')+';white-space:nowrap">'+(d?'✓ ':'')+p.title+'</div>';}).join('')+'</div>'+'<div class="card"><div style="font-size:0.6rem;font-weight:800;color:var(--gold);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:3px">📖 '+passage.ref+'</div><div style="font-family:\'Lora\',serif;font-size:0.96rem;font-weight:700;color:var(--moss);margin-bottom:5px">'+passage.title+'</div><div style="font-family:\'Lora\',serif;font-style:italic;font-size:0.83rem;color:var(--text-mid);line-height:1.7;margin-bottom:10px">'+passage.summary+'</div><div style="background:linear-gradient(135deg,rgba(212,168,83,0.1),rgba(240,208,144,0.07));border-radius:9px;padding:9px;margin-bottom:11px;border-left:3px solid var(--gold)"><div style="font-size:0.58rem;font-weight:800;color:var(--gold);text-transform:uppercase;margin-bottom:2px">Seeds Available</div><div style="font-size:0.76rem;color:var(--earth);font-weight:700">🌱 +'+passage.seeds+' '+study.seedName+' for passing the quiz</div></div><div style="text-align:center;display:flex;gap:7px;justify-content:center;flex-wrap:wrap"><a href="bible.html" style="display:inline-block;padding:9px 16px;border-radius:50px;background:var(--parchment);border:1.5px solid rgba(180,150,100,0.3);text-decoration:none;font-family:\'Nunito\',sans-serif;font-size:0.76rem;font-weight:700;color:var(--text-mid)">📖 Read in Bible</a><button class="btn-primary" onclick="startPassageQuiz(\''+key+'\','+pi+')" style="font-size:0.8rem">'+(done?'📝 Retake Quiz':'📝 Take Quiz →')+'</button></div></div>'+'<div class="card"><div class="card-title">👤 People of '+study.name+'</div>'+study.people.map(p=>'<div style="display:flex;gap:7px;padding:7px 0;border-bottom:1px solid rgba(180,150,100,0.1)"><span style="font-size:1rem;flex-shrink:0">✨</span><div><div style="font-weight:700;font-size:0.76rem;color:var(--moss)">'+p.name+'</div><div style="font-size:0.7rem;color:var(--text-soft);font-family:\'Lora\',serif;font-style:italic;line-height:1.5">'+p.desc+'</div></div></div>').join('')+'</div>'+(pi<study.passages.length-1?'<div style="text-align:center;margin-top:10px"><button class="btn-outline" onclick="fruitStudyState.passageIdx='+(pi+1)+';document.getElementById(\'poBody\').innerHTML=buildFruitStudyPage(\''+key+'\')" >Next Passage →</button></div>':'');
+}
+function startPassageQuiz(key,pi){fruitStudyState.quizMode=true;fruitStudyState.passageIdx=pi;fruitStudyState.quizIdx=0;fruitStudyState.quizAnswered=false;fruitStudyState.sessionCorrect=0;fruitStudyState.sessionTotal=0;document.getElementById('poBody').innerHTML=buildFruitQuiz(key);}
+function buildFruitQuiz(key){
+  const study=FRUIT_STUDIES[key];const passage=study.passages[fruitStudyState.passageIdx];const qi=fruitStudyState.quizIdx;
+  if(qi>=passage.quiz.length){return buildPassageComplete(key);}
+  const q=passage.quiz[qi];
+  let h='<div style="background:'+study.color+'22;border-radius:13px;padding:11px;margin-bottom:11px;border:1.5px solid '+study.color+'44;text-align:center"><div style="font-size:1.3rem">'+study.emoji+'</div><div style="font-family:\'Lora\',serif;font-size:0.88rem;font-weight:700;color:'+study.color+'">'+passage.title+' — Quiz</div><div style="font-size:0.6rem;color:var(--text-soft);margin-top:2px">Question '+(qi+1)+' of '+passage.quiz.length+'</div></div><div class="quiz-card">';
+  if(q.type==='fill'){h+='<div class="quiz-type-badge">Fill in the Blank</div><div class="quiz-question">"'+q.before+' <span style="background:var(--gold-light);padding:0 5px;border-radius:3px">_______</span> '+q.after+'"<br/><span style="font-size:0.64rem;color:var(--text-soft)">'+q.ref+'</span></div><input class="quiz-fill-input" id="fquizIn" placeholder="Type the missing word..."/><div style="text-align:center"><button class="btn-primary" onclick="ansFruitFill(\''+q.blank+'\',\''+key+'\',\''+q.explain.replace(/'/g,"\\'")+'\')">Check Answer</button></div>';}
+  else{const qt=q.type==='people'?'👤 People':q.type==='story'?'📜 Story':'📖 Scripture';h+='<div class="quiz-type-badge">'+qt+'</div><div class="quiz-question">'+(q.question||q.verse||'')+'</div>'+(q.ref?'<div class="quiz-ref-big">'+q.ref+'</div>':'')+'<div class="quiz-options">'+q.options.map((o,i)=>'<button class="quiz-opt" id="fqo'+i+'" onclick="ansFruitMCQ(\''+o.replace(/'/g,"\\'").replace(/"/g,'&quot;')+'\',\''+q.correct.replace(/'/g,"\\'").replace(/"/g,'&quot;')+'\','+i+',\''+key+'\',\''+q.explain.replace(/'/g,"\\'")+'\',\''+JSON.stringify(q.options).replace(/'/g,"\\'")+'\')">'+o+'</button>').join('')+'</div>';}
+  h+='<div class="quiz-result" id="fqResult"></div></div>';return h;
+}
+function ansFruitMCQ(chosen,correct,idx,key,explain,optionsJson){
+  if(fruitStudyState.quizAnswered)return;fruitStudyState.quizAnswered=true;
+  let opts;try{opts=JSON.parse(optionsJson);}catch(e){opts=[];}
+  const ok=chosen===correct;
+  opts.forEach((_,i)=>{const el=document.getElementById('fqo'+i);if(!el)return;el.disabled=true;if(i===idx)el.classList.add(ok?'correct':'wrong');if(opts[i]===correct)el.classList.add('correct');});
+  fruitStudyState.sessionTotal++;if(ok)fruitStudyState.sessionCorrect++;
+  const el=document.getElementById('fqResult');
+  if(el){el.className='quiz-result show '+(ok?'right':'wrong-r');el.innerHTML=(ok?'<strong>✨ Correct!</strong>':'<strong>✗ The answer is: </strong><em>'+correct+'</em>')+(explain?'<div style="margin-top:7px;font-size:0.74rem;color:var(--text-mid);font-style:normal;border-top:1px solid rgba(180,150,100,0.2);padding-top:7px">'+explain+'</div>':'');}
+  setTimeout(()=>{const r=document.getElementById('fqResult');if(r)r.innerHTML+='<div style="text-align:center;margin-top:9px"><button class="btn-primary" onclick="nextFruitQ(\''+key+'\')">'+( fruitStudyState.quizIdx+1<FRUIT_STUDIES[key].passages[fruitStudyState.passageIdx].quiz.length?'Next Question →':'See Results ✓')+'</button></div>';},500);
+}
+function ansFruitFill(correct,key,explain){
+  if(fruitStudyState.quizAnswered)return;
+  const val=(document.getElementById('fquizIn').value||'').trim().toLowerCase();const ok=val===correct.toLowerCase();
+  fruitStudyState.quizAnswered=true;fruitStudyState.sessionTotal++;if(ok)fruitStudyState.sessionCorrect++;
+  const el=document.getElementById('fqResult');
+  if(el){el.className='quiz-result show '+(ok?'right':'wrong-r');el.innerHTML=(ok?'<strong>✨ Correct! The word is: '+correct+'</strong>':'<strong>✗ The word is: <em>'+correct+'</em></strong>')+(explain?'<div style="margin-top:7px;font-size:0.74rem;color:var(--text-mid);font-style:normal;border-top:1px solid rgba(180,150,100,0.2);padding-top:7px">'+explain+'</div>':'');}
+  setTimeout(()=>{const r=document.getElementById('fqResult');if(r)r.innerHTML+='<div style="text-align:center;margin-top:9px"><button class="btn-primary" onclick="nextFruitQ(\''+key+'\')">'+( fruitStudyState.quizIdx+1<FRUIT_STUDIES[key].passages[fruitStudyState.passageIdx].quiz.length?'Next Question →':'See Results ✓')+'</button></div>';},500);
+}
+function nextFruitQ(key){fruitStudyState.quizIdx++;fruitStudyState.quizAnswered=false;document.getElementById('poBody').innerHTML=buildFruitQuiz(key);}
+function buildPassageComplete(key){
+  const study=FRUIT_STUDIES[key];const passage=study.passages[fruitStudyState.passageIdx];
+  const allCorrect=fruitStudyState.sessionCorrect===fruitStudyState.sessionTotal&&fruitStudyState.sessionTotal>0;
+  const seedsEarned=allCorrect?passage.seeds:Math.max(1,Math.floor(passage.seeds*0.5));
+  const passKey=key+'_'+fruitStudyState.passageIdx;
+  if(!S.fruitPassages)S.fruitPassages={};
+  if(!S.fruitPassages[passKey]){
+    S.fruitPassages[passKey]=true;
+    if(!S.fruitSeeds)S.fruitSeeds={};
+    S.fruitSeeds[key]=(S.fruitSeeds[key]||0)+seedsEarned;
+    S.seeds+=2;save();updAll();
+    if(S.fruitSeeds[key]>=study.needed){setTimeout(()=>showToast('🎉 '+study.emoji+' '+study.name+' UNLOCKED in thy garden!'),400);const fi=S.fruits.findIndex(f=>f.name===key);if(fi>=0){S.fruits[fi].sessions=S.fruits[fi].needed;save();}}
+  }
+  const ft=(S.fruitSeeds&&S.fruitSeeds[key])||0;
+  return'<div style="text-align:center;padding:18px 12px"><div style="font-size:2.3rem;margin-bottom:9px">'+(allCorrect?'🎉':'🌱')+'</div><div style="font-family:\'Lora\',serif;font-size:1.15rem;font-weight:700;color:var(--moss);margin-bottom:5px">'+(allCorrect?'Well done, faithful one!':'Keep growing!')+'</div><div style="font-family:\'Lora\',serif;font-style:italic;font-size:0.8rem;color:var(--text-soft);margin-bottom:14px;line-height:1.6">'+fruitStudyState.sessionCorrect+'/'+fruitStudyState.sessionTotal+' correct — '+(allCorrect?'Perfect score! +'+passage.seeds+' seeds':'Partial score. +'+seedsEarned+' seeds')+'</div><div style="background:'+study.color+'22;border-radius:13px;padding:14px;margin-bottom:14px;border:1.5px solid '+study.color+'44"><div style="font-size:1.3rem;margin-bottom:5px">'+study.emoji+'</div><div style="font-size:0.76rem;font-weight:800;color:'+study.color+';margin-bottom:3px">+'+seedsEarned+' '+study.seedName+' planted!</div><div style="font-size:0.68rem;color:var(--text-soft)">'+ft+'/'+study.needed+' total — '+Math.min(100,Math.round(ft/study.needed*100))+'% grown</div><div class="progress-wrap" style="margin-top:7px"><div class="progress-fill" style="width:'+Math.min(100,Math.round(ft/study.needed*100))+'%;background:'+study.color+'"></div></div>'+(ft>=study.needed?'<div style="font-size:0.8rem;font-weight:800;color:'+study.color+';margin-top:7px">✨ FRUIT UNLOCKED IN THY GARDEN!</div>':'')+'</div><div style="display:flex;gap:7px;justify-content:center;flex-wrap:wrap"><button class="btn-outline" onclick="fruitStudyState.quizMode=false;document.getElementById(\'poBody\').innerHTML=buildFruitStudyPage(\''+key+'\')" >← Back to Passages</button><button class="btn-primary" onclick="closePage();openPage(\'garden\')">View Garden 🌸</button></div></div>';
+}
+
+// SCENE BUILDERS
+function buildStars(){const w=document.getElementById('starsWrap');for(let i=0;i<36;i++){const s=document.createElement('div');s.className='star';const sz=Math.random()*2.2+0.8;s.style.cssText='width:'+sz+'px;height:'+sz+'px;left:'+(Math.random()*100)+'%;top:'+(Math.random()*62)+'%;animation-delay:'+(Math.random()*3)+'s;animation-duration:'+(1.5+Math.random()*2)+'s';w.appendChild(s);}}
+function buildRain(){const c=document.getElementById('rainWrap');for(let i=0;i<52;i++){const d=document.createElement('div');d.className='rdrop';const h=Math.random()*72+18;d.style.cssText='left:'+(Math.random()*100)+'%;height:'+h+'px;animation-duration:'+(0.5+Math.random()*0.5)+'s;animation-delay:'+(Math.random()*0.8)+'s';c.appendChild(d);}}
+function buildGrass(){const c=document.getElementById('grassC');for(let i=0;i<26;i++){const g=document.createElement('div');g.className='gblade';const h=Math.random()*15+8;g.style.cssText='left:'+(Math.random()*100)+'%;height:'+h+'px;background:hsl('+(112+Math.random()*18)+',47%,'+(42+Math.random()*13)+'%);animation-duration:'+(2+Math.random()*2)+'s;animation-delay:'+(Math.random()*2)+'s';c.appendChild(g);}}
+
+const BV=[{t:'"He maketh me to lie down in green pastures."',r:'Psalm 23:2 KJV'},{t:'"The LORD is my shepherd; I shall not want."',r:'Psalm 23:1 KJV'},{t:'"Be still, and know that I am God."',r:'Psalm 46:10 KJV'},{t:'"I am the vine, ye are the branches."',r:'John 15:5 KJV'}];
+let bvIdx=0;
+function rotateBV(){bvIdx=(bvIdx+1)%BV.length;const v=BV[bvIdx];document.getElementById('bottomVerse').innerHTML=v.t+'<span class="bottom-verse-ref">'+v.r+'</span>';}
+
+// INIT
+function init(){
+  buildStars();buildRain();buildGrass();buildLangScreen();
+  curLang=S.lang||'en';selectedLang=curLang;
+  if(!S.fruitSeeds)S.fruitSeeds={};
+  if(!S.fruitPassages)S.fruitPassages={};
+  if(S.firstOpen||!S.name){showScreen('langScreen');}else{showMoodScreen();}
+  sLeft=cDur*60;tSecs=sLeft;updDisp();updVerse();updAll();
+  applyTheme(S.equipped.theme||'meadow');
+  setInterval(rotateBV,12000);
+}
+init();
 </script>
 </body>
 </html>
