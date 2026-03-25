@@ -356,7 +356,67 @@ body{font-family:'Nunito',sans-serif;background:#1a2a1a;color:var(--text);height
 .qs-lbl{font-size:0.6rem;font-weight:700;color:var(--text-soft);text-transform:uppercase;letter-spacing:0.06em}
 .gt-time{font-family:'Lora',serif;font-size:2rem;font-weight:700;color:var(--moss);margin-top:7px}
 
-/* ===== TOAST & MODAL ===== */
+/* ===== PREMIUM / GRAIN / STORE STYLES ===== */
+.premium-hero{background:linear-gradient(135deg,#2a1a00,#5a3800);border-radius:18px;padding:24px 18px;text-align:center;margin-bottom:16px;position:relative;overflow:hidden}
+.premium-glow{position:absolute;top:-30px;left:50%;transform:translateX(-50%);width:160px;height:160px;background:radial-gradient(circle,rgba(212,168,83,0.3),transparent 70%);pointer-events:none}
+.premium-crown{font-size:2.8rem;display:block;margin-bottom:8px;filter:drop-shadow(0 0 12px rgba(212,168,83,0.6))}
+.premium-title{font-family:'Lora',serif;font-size:1.4rem;font-weight:700;color:var(--gold-light);margin-bottom:4px}
+.premium-sub{font-family:'Lora',serif;font-style:italic;font-size:0.78rem;color:rgba(255,255,255,0.7);line-height:1.6;margin-bottom:14px}
+.premium-price{display:inline-block;background:linear-gradient(135deg,var(--gold),var(--earth-light));color:white;font-family:'Nunito',sans-serif;font-size:1.1rem;font-weight:900;padding:10px 28px;border-radius:50px;margin-bottom:8px;box-shadow:0 4px 16px rgba(212,168,83,0.4)}
+.premium-once{font-size:0.68rem;color:rgba(255,255,255,0.6);font-family:'Lora',serif;font-style:italic}
+.prem-feature{display:flex;align-items:center;gap:10px;padding:10px 13px;background:white;border-radius:12px;margin-bottom:7px;box-shadow:0 1px 6px rgba(60,40,20,0.06)}
+.pf-icon{font-size:1.2rem;flex-shrink:0}
+.pf-text{font-size:0.78rem;font-weight:700;color:var(--text-mid)}
+.pf-sub{font-size:0.62rem;color:var(--text-soft);margin-top:1px}
+.pf-badge{margin-left:auto;font-size:0.58rem;font-weight:800;color:white;background:var(--moss);padding:2px 7px;border-radius:10px;white-space:nowrap}
+.pf-badge.gold{background:linear-gradient(135deg,var(--gold),var(--earth-light))}
+.btn-premium{width:100%;padding:15px;border-radius:50px;border:none;background:linear-gradient(135deg,var(--gold),var(--earth-light));color:white;font-family:'Nunito',sans-serif;font-size:1rem;font-weight:900;cursor:pointer;box-shadow:0 4px 16px rgba(212,168,83,0.35);transition:all 0.2s;margin-bottom:8px}
+.btn-premium:active{transform:scale(0.97)}
+.already-premium{background:linear-gradient(135deg,rgba(61,94,63,0.12),rgba(78,122,86,0.06));border:1.5px solid var(--sage);border-radius:14px;padding:14px;text-align:center}
+/* Warning banner */
+.cloud-warning{background:linear-gradient(135deg,rgba(212,168,83,0.14),rgba(240,208,144,0.08));border:1.5px solid var(--gold);border-radius:14px;padding:13px;margin-bottom:14px}
+.cw-title{font-size:0.76rem;font-weight:800;color:var(--earth);margin-bottom:4px;display:flex;align-items:center;gap:5px}
+.cw-body{font-size:0.7rem;color:var(--text-mid);line-height:1.55;margin-bottom:8px;font-family:'Lora',serif;font-style:italic}
+.cw-btns{display:flex;gap:7px}
+.cw-upgrade{flex:1;padding:8px;border-radius:20px;border:none;background:linear-gradient(135deg,var(--gold),var(--earth-light));color:white;font-family:'Nunito',sans-serif;font-size:0.72rem;font-weight:800;cursor:pointer}
+.cw-skip{flex:1;padding:8px;border-radius:20px;border:1.5px solid rgba(180,150,100,0.3);background:transparent;color:var(--text-soft);font-family:'Nunito',sans-serif;font-size:0.72rem;font-weight:700;cursor:pointer}
+/* Grain shop */
+.grain-item{background:white;border-radius:16px;padding:14px;margin-bottom:10px;border:1.5px solid rgba(180,150,100,0.12);box-shadow:0 2px 12px rgba(60,40,20,0.07)}
+.gi-top{display:flex;align-items:flex-start;gap:10px;margin-bottom:8px}
+.gi-scene{width:56px;height:56px;border-radius:12px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:1.6rem;background:linear-gradient(135deg,rgba(78,122,86,0.12),rgba(61,94,63,0.06))}
+.gi-name{font-family:'Lora',serif;font-size:0.9rem;font-weight:700;color:var(--moss);margin-bottom:2px}
+.gi-ref{font-size:0.62rem;color:var(--gold);font-weight:700;margin-bottom:3px}
+.gi-desc{font-size:0.7rem;color:var(--text-soft);line-height:1.5;font-family:'Lora',serif;font-style:italic}
+.gi-footer{display:flex;align-items:center;justify-content:space-between}
+.gi-cost{font-size:0.78rem;font-weight:800;color:var(--earth)}
+.gi-btn{padding:6px 14px;border-radius:20px;border:none;font-family:'Nunito',sans-serif;font-size:0.72rem;font-weight:800;cursor:pointer;transition:all 0.2s}
+.gi-btn.buy{background:linear-gradient(135deg,var(--sage-dark),var(--moss));color:white}
+.gi-btn.owned{background:linear-gradient(135deg,rgba(212,168,83,0.2),rgba(240,208,144,0.12));color:var(--earth);border:1.5px solid var(--gold)}
+.gi-btn.equip{background:var(--moss);color:white}
+/* Honey */
+.honey-card{background:linear-gradient(135deg,#fff8e8,#fff3d4);border-radius:16px;padding:14px;margin-bottom:10px;border:1.5px solid rgba(212,168,83,0.3)}
+.hc-top{display:flex;align-items:center;gap:10px;margin-bottom:7px}
+.hc-icon{font-size:1.8rem}
+.hc-name{font-family:'Lora',serif;font-size:0.9rem;font-weight:700;color:var(--earth)}
+.hc-dur{font-size:0.62rem;color:var(--text-soft);margin-top:1px}
+.hc-effect{font-size:0.72rem;color:var(--text-mid);margin-bottom:8px;line-height:1.5;font-family:'Lora',serif;font-style:italic}
+.hc-footer{display:flex;align-items:center;justify-content:space-between}
+.hc-price{font-size:0.86rem;font-weight:800;color:var(--earth)}
+.hc-btn{padding:7px 16px;border-radius:20px;border:none;background:linear-gradient(135deg,#d4a020,#c47810);color:white;font-family:'Nunito',sans-serif;font-size:0.74rem;font-weight:800;cursor:pointer}
+/* Merch store */
+.merch-category{font-size:0.62rem;font-weight:800;color:var(--text-soft);text-transform:uppercase;letter-spacing:0.1em;padding:12px 0 6px;font-family:'Lora',serif}
+.merch-item{display:flex;align-items:center;gap:11px;padding:12px 13px;background:white;border-radius:13px;margin-bottom:8px;border:1px solid rgba(180,150,100,0.12);box-shadow:0 1px 7px rgba(60,40,20,0.06)}
+.mi-thumb{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--parchment),var(--cream));display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0}
+.mi-name{font-family:'Lora',serif;font-size:0.82rem;font-weight:700;color:var(--text);margin-bottom:2px}
+.mi-desc{font-size:0.62rem;color:var(--text-soft);line-height:1.4}
+.mi-price{margin-left:auto;font-size:0.8rem;font-weight:800;color:var(--moss);white-space:nowrap}
+.mi-link{display:inline-block;margin-top:3px;font-size:0.6rem;font-weight:700;color:var(--sage-dark);text-decoration:none}
+/* Companion animations */
+@keyframes eagleFly{0%{left:-80px;top:18%;opacity:0}5%{opacity:1}88%{opacity:1}100%{left:calc(100vw+80px);top:14%;opacity:0}}
+.eagle-el{position:fixed;z-index:55;pointer-events:none;animation:eagleFly 12s ease-in-out forwards}
+@keyframes doveVisit{0%{left:-60px;top:35%;opacity:0}8%{opacity:1;left:20%}25%{left:42%;top:37%}40%{left:44%;top:38%}75%{left:44%;top:38%;opacity:1}88%{left:60%;top:35%;opacity:0.6}100%{left:calc(100vw+60px);top:32%;opacity:0}}
+.dove-visit-el{position:fixed;z-index:55;pointer-events:none;animation:doveVisit 8s ease-in-out forwards}
+
 .toast{position:fixed;top:14px;left:50%;transform:translateX(-50%) translateY(-56px);background:var(--moss);color:white;padding:7px 14px;border-radius:50px;font-size:0.7rem;font-weight:700;z-index:500;transition:transform 0.34s cubic-bezier(0.34,1.56,0.64,1);white-space:nowrap;box-shadow:0 3px 13px rgba(0,0,0,0.2)}
 .toast.show{transform:translateX(-50%) translateY(0)}
 .modal-ol{position:fixed;inset:0;background:rgba(46,35,24,0.5);backdrop-filter:blur(4px);z-index:400;display:none;align-items:center;justify-content:center;padding:14px}
@@ -555,7 +615,7 @@ body{font-family:'Nunito',sans-serif;background:#1a2a1a;color:var(--text);height
       <div class="stat-box"><div class="sn" id="sQ">0</div><div class="sl" id="slQuiet">Quiet Moments</div></div>
       <div class="stat-box"><div class="sn" id="sW">0</div><div class="sl" id="slWeek">This Week</div></div>
     </div>
-    <div class="tok-row"><div class="seed-chip">🌱 <span id="seedDisp">0</span> <span id="seedLbl">seeds</span></div></div>
+    <div class="tok-row"><div class="seed-chip">🌱 <span id="seedDisp">0</span> <span id="seedLbl">seeds</span></div><div id="grainChip" style="display:none;margin-left:6px;background:linear-gradient(135deg,rgba(180,130,60,0.14),rgba(212,168,83,0.08));border:1px solid rgba(180,130,60,0.3);border-radius:13px;padding:2px 9px;font-size:0.65rem;font-weight:800;color:var(--earth)">🌾 <span id="grainDisp">0</span></div><div id="premChip" style="display:none;margin-left:6px;background:linear-gradient(135deg,rgba(212,168,83,0.2),rgba(240,208,144,0.12));border:1px solid var(--gold);border-radius:13px;padding:2px 9px;font-size:0.65rem;font-weight:800;color:var(--earth)">👑 Premium</div></div>
   </div>
 
   <!-- Bottom -->
@@ -586,7 +646,10 @@ body{font-family:'Nunito',sans-serif;background:#1a2a1a;color:var(--text);height
     <div class="menu-div"></div>
     <div class="mtab" onclick="openPage('friends')"><span class="mtab-icon">🤝</span><div class="mtab-text"><div class="mtab-name" id="mtFriends">Friends</div><div class="mtab-sub" id="mtFriendsSub">Study Together</div></div><span class="mtab-arrow">›</span></div>
     <div class="mtab" onclick="openPage('achievements')"><span class="mtab-icon">🏆</span><div class="mtab-text"><div class="mtab-name" id="mtAch">Achievements</div><div class="mtab-sub" id="mtAchSub">Milestones & Rewards</div></div><span class="mtab-arrow">›</span></div>
-    <div class="mtab" onclick="openPage('store')"><span class="mtab-icon">🏪</span><div class="mtab-text"><div class="mtab-name" id="mtStore">Garden Shop</div><div class="mtab-sub" id="mtStoreSub">Tokens & Themes</div></div><span class="mtab-arrow">›</span></div>
+    <div class="mtab" onclick="openPage('store')"><span class="mtab-icon">🌱</span><div class="mtab-text"><div class="mtab-name" id="mtStore">Garden Shop</div><div class="mtab-sub" id="mtStoreSub">Seeds & Themes</div></div><span class="mtab-arrow">›</span></div>
+    <div class="mtab" onclick="openPage('grainshop')"><span class="mtab-icon">🌾</span><div class="mtab-text"><div class="mtab-name">Grain Shop</div><div class="mtab-sub">Premium Items</div></div><span class="mtab-arrow">›</span></div>
+    <div class="mtab" onclick="openPage('shopstore')"><span class="mtab-icon">🛒</span><div class="mtab-text"><div class="mtab-name">Pasture Store</div><div class="mtab-sub">Bibles, Books & Merch</div></div><span class="mtab-arrow">›</span></div>
+    <div class="mtab" onclick="openPage('premium')" style="background:linear-gradient(90deg,rgba(212,168,83,0.08),rgba(240,208,144,0.04))"><span class="mtab-icon">👑</span><div class="mtab-text"><div class="mtab-name" style="color:var(--gold)">Go Premium</div><div class="mtab-sub">$2.99 — once, forever</div></div><span class="mtab-arrow" style="color:var(--gold)">›</span></div>
     <div class="menu-div"></div>
     <div class="mtab" onclick="openPage('settings')"><span class="mtab-icon">⚙️</span><div class="mtab-text"><div class="mtab-name" id="mtSettings">Settings</div><div class="mtab-sub" id="mtSettingsSub">Sounds, Theme, Language</div></div><span class="mtab-arrow">›</span></div>
     <div class="mtab" onclick="openPage('news')"><span class="mtab-icon">📰</span><div class="mtab-text"><div class="mtab-name" id="mtNews">News</div><div class="mtab-sub" id="mtNewsSub">Tips & Updates</div></div><span class="mtab-arrow">›</span></div>
@@ -896,7 +959,7 @@ const FRUIT_STUDIES={
 // ===== STATE =====
 function loadS(){
   try{const s=localStorage.getItem('pasture_v7');if(s){const d=JSON.parse(s);PATHS.forEach((p,pi)=>{if(d.paths&&d.paths[pi])d.paths[pi].chapters.forEach((c,ci)=>{if(PATHS[pi].chapters[ci])PATHS[pi].chapters[ci].done=c.done;});});d.paths=PATHS;d.fruits=d.fruits||FRUITS.map(f=>({...f}));d.seasons=d.seasons||SEASONS.map(s=>({...s,areas:s.areas.map(a=>({n:a.n,i:a.i,done:false})),unlocked:s.unlockAt===0}));return d;}}catch(e){}
-  return{fruits:FRUITS.map(f=>({...f})),seasons:SEASONS.map(s=>({...s,areas:s.areas.map(a=>({n:a.n,i:a.i,done:false})),unlocked:s.unlockAt===0})),activeSeason:'scripture',paths:PATHS,streaks:{prayer:0,scripture:0,quiet:0},total:0,week:0,history:[],lastVisit:null,seeds:0,owned:{themes:['meadow'],paths:[]},equipped:{theme:'meadow'},achievements:[],settings:{sounds:true,grace:true,theme:'meadow'},quizCorrect:0,quizStreak:0,group:null,lang:'en',name:'',firstOpen:true,fruitSeeds:{},fruitPassages:{}};
+  return{fruits:FRUITS.map(f=>({...f})),seasons:SEASONS.map(s=>({...s,areas:s.areas.map(a=>({n:a.n,i:a.i,done:false})),unlocked:s.unlockAt===0})),activeSeason:'scripture',paths:PATHS,streaks:{prayer:0,scripture:0,quiet:0},total:0,week:0,history:[],lastVisit:null,seeds:0,grain:0,premium:false,grainOwned:[],grainEquipped:{},honeyActive:null,honeyExpiry:null,honeyMult:1,owned:{themes:['meadow'],paths:[]},equipped:{theme:'meadow'},achievements:[],settings:{sounds:true,grace:true,theme:'meadow'},quizCorrect:0,quizStreak:0,group:null,lang:'en',name:'',firstOpen:true,fruitSeeds:{},fruitPassages:{}};
 }
 let S=loadS();
 function save(){try{localStorage.setItem('pasture_v7',JSON.stringify(S));}catch(e){}}
@@ -1043,7 +1106,7 @@ function complete(){
   running=false;paused=false;document.getElementById('goBtn').textContent='Begin';document.getElementById('stpBtn').style.display='none';document.getElementById('rPhase').textContent='Session complete ✨';document.getElementById('growBar').style.display='none';
   const m=MODES[cMode];S.fruits[m.fruit].sessions++;[3,5,7,8].forEach(i=>{S.fruits[i].sessions+=0.5;});S.total++;S.week++;
   if(cMode===0)S.streaks.prayer++;if(cMode===1)S.streaks.scripture++;if(cMode===3)S.streaks.quiet++;
-  const earned=cDur>=20?20:cDur>=10?12:8;S.seeds+=earned;spawnCoin(earned);bell();dove();
+  const earnedBase=cDur>=20?20:cDur>=10?12:8;const earned=Math.round(earnedBase*getHoneyMult());S.seeds+=earned;spawnCoin(earned);bell();dove();
   S.history.unshift({mode:m.name,icon:m.icon,fruit:m.fn,mins:cDur,time:new Date().toLocaleString([],{month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'})});if(S.history.length>60)S.history.pop();
   S.seasons.forEach(s=>{if(S.total>=s.unlockAt)s.unlocked=true;});S.lastVisit=Date.now();checkAch();save();updAll();
   const cv=DONE_V[Math.floor(Math.random()*DONE_V.length)];
@@ -1057,13 +1120,25 @@ function spawnCoin(a){const el=document.createElement('div');el.className='cpop'
 function dove(){const el=document.createElement('div');el.className='dove-el';el.textContent='🕊️';document.body.appendChild(el);setTimeout(()=>el.remove(),3600);}
 function checkAch(){ACHIEVEMENTS.forEach(a=>{if(!S.achievements.includes(a.id)&&a.check(S)){S.achievements.push(a.id);const m=a.reward.match(/(\d+)/);if(m)S.seeds+=parseInt(m[1]);setTimeout(()=>showToast('🏆 '+a.name+'! '+a.reward),900);}});}
 function applyTheme(id){const t=THEMES.find(x=>x.id===id)||THEMES[0];const sc=document.getElementById('scene');sc.className='scene '+t.sky;document.getElementById('rays').style.opacity=t.rays?'1':'0';document.getElementById('rainWrap').style.opacity=t.rain?'1':'0';document.getElementById('sSun').style.opacity=t.night?'0':'1';document.getElementById('sMoon').style.opacity=t.night?'1':'0';document.getElementById('starsWrap').style.opacity=t.night?'1':'0';}
-function updAll(){document.getElementById('sP').textContent=S.streaks.prayer;document.getElementById('sSc').textContent=S.streaks.scripture;document.getElementById('sQ').textContent=S.streaks.quiet;document.getElementById('sW').textContent=S.week;document.getElementById('seedDisp').textContent=S.seeds;updFruit();applyTheme(S.equipped.theme);}
+function updAll(){
+  document.getElementById('sP').textContent=S.streaks.prayer;
+  document.getElementById('sSc').textContent=S.streaks.scripture;
+  document.getElementById('sQ').textContent=S.streaks.quiet;
+  document.getElementById('sW').textContent=S.week;
+  document.getElementById('seedDisp').textContent=S.seeds;
+  const gc=document.getElementById('grainChip');
+  const pc=document.getElementById('premChip');
+  const gd=document.getElementById('grainDisp');
+  if(isPremium()){if(gc)gc.style.display='inline-flex';if(pc)pc.style.display='inline-flex';if(gd)gd.textContent=S.grain||0;}
+  else{if(gc)gc.style.display='none';if(pc)pc.style.display='none';}
+  updFruit();applyTheme(S.equipped.theme);
+}
 function openMenu(){document.getElementById('menuOL').classList.add('show');document.getElementById('sideMenu').classList.add('open');}
 function closeMenu(){document.getElementById('menuOL').classList.remove('show');document.getElementById('sideMenu').classList.remove('open');}
-const PAGE_TITLES={garden:'🍇 Garden',challenge:'📝 Bible Challenge',paths:'🛤️ Wisdom Paths',friends:'🤝 Friends',achievements:'🏆 Achievements',store:'🌱 Garden Shop',settings:'⚙️ Settings',news:'📰 News'};
+const PAGE_TITLES={garden:'🍇 Garden',challenge:'📝 Bible Challenge',paths:'🛤️ Wisdom Paths',friends:'🤝 Friends',achievements:'🏆 Achievements',store:'🌱 Garden Shop',grainshop:'🌾 Grain Shop',shopstore:'🛒 Pasture Store',premium:'👑 Go Premium',settings:'⚙️ Settings',news:'📰 News'};
 function openPage(name){closeMenu();document.getElementById('poTitle').textContent=PAGE_TITLES[name]||name;document.getElementById('poBody').innerHTML=buildPage(name);document.getElementById('pageOL').classList.add('open');}
 function closePage(){document.getElementById('pageOL').classList.remove('open');}
-function buildPage(n){if(n==='garden')return bGarden();if(n==='challenge')return bChallenge();if(n==='paths')return bPaths();if(n==='friends')return bFriends();if(n==='achievements')return bAch();if(n==='store')return bStore();if(n==='settings')return bSettings();if(n==='news')return bNews();return '';}
+function buildPage(n){if(n==='garden')return bGarden();if(n==='challenge')return bChallenge();if(n==='paths')return bPaths();if(n==='friends')return bFriends();if(n==='achievements')return bAch();if(n==='store')return bStore();if(n==='grainshop')return bGrainShop();if(n==='shopstore')return bShopStore();if(n==='premium')return bPremium();if(n==='settings')return bSettings();if(n==='news')return bNews();if(n.startsWith('fruitStudy_')){const key=n.replace('fruitStudy_','');return buildFruitStudyPage(key);}return '';}
 function bGarden(){
   const fg=S.fruits.map((f,fi)=>{
     const studyKey=f.name;
@@ -1301,7 +1376,329 @@ function buildPassageComplete(key){
   return'<div style="text-align:center;padding:18px 12px"><div style="font-size:2.3rem;margin-bottom:9px">'+(allCorrect?'🎉':'🌱')+'</div><div style="font-family:\'Lora\',serif;font-size:1.15rem;font-weight:700;color:var(--moss);margin-bottom:5px">'+(allCorrect?'Well done, faithful one!':'Keep growing!')+'</div><div style="font-family:\'Lora\',serif;font-style:italic;font-size:0.8rem;color:var(--text-soft);margin-bottom:14px;line-height:1.6">'+fruitStudyState.sessionCorrect+'/'+fruitStudyState.sessionTotal+' correct — '+(allCorrect?'Perfect score! +'+passage.seeds+' seeds':'Partial score. +'+seedsEarned+' seeds')+'</div><div style="background:'+study.color+'22;border-radius:13px;padding:14px;margin-bottom:14px;border:1.5px solid '+study.color+'44"><div style="font-size:1.3rem;margin-bottom:5px">'+study.emoji+'</div><div style="font-size:0.76rem;font-weight:800;color:'+study.color+';margin-bottom:3px">+'+seedsEarned+' '+study.seedName+' planted!</div><div style="font-size:0.68rem;color:var(--text-soft)">'+ft+'/'+study.needed+' total — '+Math.min(100,Math.round(ft/study.needed*100))+'% grown</div><div class="progress-wrap" style="margin-top:7px"><div class="progress-fill" style="width:'+Math.min(100,Math.round(ft/study.needed*100))+'%;background:'+study.color+'"></div></div>'+(ft>=study.needed?'<div style="font-size:0.8rem;font-weight:800;color:'+study.color+';margin-top:7px">✨ FRUIT UNLOCKED IN THY GARDEN!</div>':'')+'</div><div style="display:flex;gap:7px;justify-content:center;flex-wrap:wrap"><button class="btn-outline" onclick="fruitStudyState.quizMode=false;document.getElementById(\'poBody\').innerHTML=buildFruitStudyPage(\''+key+'\')" >← Back to Passages</button><button class="btn-primary" onclick="closePage();openPage(\'garden\')">View Garden 🌸</button></div></div>';
 }
 
-// SCENE BUILDERS
+// ===== PREMIUM SYSTEM =====
+function isPremium(){return S.premium===true;}
+function bPremium(){
+  if(isPremium()){
+    return`<div class="already-premium">
+      <div style="font-size:2rem;margin-bottom:8px">👑</div>
+      <div style="font-family:'Lora',serif;font-size:1.1rem;font-weight:700;color:var(--moss);margin-bottom:5px">Thou art a Premium Member!</div>
+      <div style="font-family:'Lora',serif;font-style:italic;font-size:0.78rem;color:var(--text-soft);line-height:1.6;margin-bottom:10px">"Well done, thou good and faithful servant." — Matthew 25:21 KJV</div>
+      <div style="font-size:0.72rem;color:var(--text-soft)">Cloud sync active • All features unlocked • Grain Shop open</div>
+    </div>
+    <div class="card" style="margin-top:14px">
+      <div class="card-title">🌾 Thy Grain Balance</div>
+      <div style="text-align:center;padding:10px 0">
+        <div style="font-family:'Lora',serif;font-size:2rem;font-weight:700;color:var(--earth)">${S.grain||0}</div>
+        <div style="font-size:0.62rem;color:var(--text-soft);text-transform:uppercase;font-weight:700">Grain available</div>
+      </div>
+      <div style="font-size:0.68rem;color:var(--text-soft);text-align:center;font-family:'Lora',serif;font-style:italic">"Bringing his sheaves with him." — Psalm 126:6 KJV</div>
+    </div>`;
+  }
+  return`<div class="premium-hero">
+    <div class="premium-glow"></div>
+    <span class="premium-crown">👑</span>
+    <div class="premium-title">Pasture Premium</div>
+    <div class="premium-sub">"The labourer is worthy of his hire." — Luke 10:7 KJV</div>
+    <div class="premium-price">$2.99</div>
+    <div class="premium-once">Once. Forever. No subscriptions. No hidden fees.</div>
+  </div>
+  <div class="section-lbl">Everything Premium Unlocks</div>
+  ${[
+    {i:'☁️',n:'Cloud Sync',d:'Your garden saved forever — across all devices',b:'Premium'},
+    {i:'🌾',n:'Grain Shop',d:'Biblical scene backgrounds, companions, sounds',b:'Premium'},
+    {i:'🍯',n:'Honey Elixir',d:'Boost your seeds — earn faster for a season',b:'Premium'},
+    {i:'🤝',n:'Friends & Community',d:'See friends\' gardens, group Bible reading',b:'Coming Soon'},
+    {i:'⛪',n:'Church Mode',d:'Pastor sets weekly reading for the congregation',b:'Coming Soon'},
+    {i:'🙏',n:'Prayer Wall',d:'Share prayer requests anonymously',b:'Coming Soon'},
+    {i:'🛒',n:'Pasture Store',d:'Bibles, books & merch — all in one place',b:'Premium'},
+    {i:'📊',n:'Weekly Reports',d:'See how thou art growing spiritually each week',b:'Premium'},
+    {i:'🦅',n:'Eagle Companion',d:'Soars across thy sky during focus sessions',b:'Grain Shop'},
+    {i:'🕊️',n:'Visiting Dove',d:'Brings an olive branch to thy sheep every 5 min',b:'Grain Shop'},
+  ].map(f=>`<div class="prem-feature"><span class="pf-icon">${f.i}</span><div style="flex:1"><div class="pf-text">${f.n}</div><div class="pf-sub">${f.d}</div></div><span class="pf-badge gold">${f.b}</span></div>`).join('')}
+  <div style="margin-top:16px">
+    <button class="btn-premium" onclick="purchasePremium()">✨ Unlock Premium — $2.99 Forever</button>
+    <div style="text-align:center;font-size:0.66rem;color:var(--text-soft);font-family:'Lora',serif;font-style:italic;line-height:1.6">No subscriptions. No hidden costs. God's Word always free.<br/>Purchase supports the mission of Pasture. 🙏</div>
+  </div>`;
+}
+function purchasePremium(){
+  // In production this would trigger Google Play / App Store purchase
+  // For now simulate the purchase
+  if(confirm('Purchase Pasture Premium for $2.99? (One-time, forever)\n\nThis will unlock all premium features including Cloud Sync, Grain Shop, and more.')){
+    S.premium=true;S.grain=S.grain||0;save();
+    openPage('premium');
+    showToast('👑 Welcome to Pasture Premium! 🌿');
+    setTimeout(()=>dove(),1000);
+  }
+}
+
+// ===== CLOUD WARNING =====
+function cloudWarning(onContinue){
+  if(isPremium())return onContinue();
+  // Show warning modal
+  const existing=document.getElementById('cloudWarnModal');
+  if(existing)existing.remove();
+  const modal=document.createElement('div');
+  modal.id='cloudWarnModal';
+  modal.style.cssText='position:fixed;inset:0;background:rgba(46,35,24,0.55);z-index:400;display:flex;align-items:center;justify-content:center;padding:16px;backdrop-filter:blur(4px)';
+  modal.innerHTML=`<div style="background:var(--warm-white);border-radius:20px;padding:22px 18px;max-width:310px;width:100%;animation:mpop 0.36s cubic-bezier(0.34,1.56,0.64,1)">
+    <div style="text-align:center;margin-bottom:12px">
+      <span style="font-size:2rem">☁️</span>
+      <div style="font-family:'Lora',serif;font-size:1.05rem;font-weight:700;color:var(--moss);margin-top:6px">Save thy garden?</div>
+    </div>
+    <div class="cloud-warning" style="margin-bottom:12px">
+      <div class="cw-title">⚠️ Free Account Warning</div>
+      <div class="cw-body">"Your seeds, grain, and purchases are saved on this device only. If thou uninstallest the app, switchest phones, or losest thy device — thy garden will be lost forever."</div>
+      <div style="font-size:0.7rem;font-weight:700;color:var(--earth)">"Upgrade to Premium ($2.99 once, forever) to save everything safely to the cloud. Thy garden will always be waiting for thee."</div>
+    </div>
+    <div style="display:flex;gap:8px">
+      <button onclick="document.getElementById('cloudWarnModal').remove();openPage('premium')" style="flex:1;padding:10px;border-radius:20px;border:none;background:linear-gradient(135deg,var(--gold),var(--earth-light));color:white;font-family:'Nunito',sans-serif;font-size:0.76rem;font-weight:800;cursor:pointer">👑 Upgrade — $2.99</button>
+      <button onclick="document.getElementById('cloudWarnModal').remove();(${onContinue})()" style="flex:1;padding:10px;border-radius:20px;border:1.5px solid rgba(180,150,100,0.3);background:transparent;color:var(--text-soft);font-family:'Nunito',sans-serif;font-size:0.72rem;font-weight:700;cursor:pointer">Continue without saving</button>
+    </div>
+  </div>`;
+  document.body.appendChild(modal);
+}
+
+// ===== GRAIN SHOP =====
+const GRAIN_ITEMS=[
+  // Biblical Scenes
+  {id:'scene_redsea',cat:'scene',name:'The Parting of the Red Sea',ref:'Exodus 14',desc:'Moses stretches his hand — the waters divide. A miracle of faith and divine power.',icon:'🌊',cost:120,type:'background'},
+  {id:'scene_bush',cat:'scene',name:'The Burning Bush',ref:'Exodus 3',desc:'God speaks from a fire that does not consume. Holy ground beneath bare feet.',icon:'🔥',cost:90,type:'background'},
+  {id:'scene_rainbow',cat:'scene',name:'Noah\'s Rainbow',ref:'Genesis 9',desc:'God\'s covenant of grace arches across the sky. His promises never fail.',icon:'🌈',cost:90,type:'background'},
+  {id:'scene_bethlehem',cat:'scene',name:'Star of Bethlehem',ref:'Matthew 2',desc:'A single star guides the wise men. The light that darkness cannot overcome.',icon:'⭐',cost:100,type:'background'},
+  {id:'scene_water',cat:'scene',name:'Jesus Walking on Water',ref:'Matthew 14',desc:'He defies what is impossible. "Be not afraid — it is I."',icon:'🌊',cost:120,type:'background'},
+  {id:'scene_baptism',cat:'scene',name:'Baptism of Jesus',ref:'Matthew 3',desc:'The dove descends. "This is my beloved Son, in whom I am well pleased."',icon:'🕊️',cost:100,type:'background'},
+  {id:'scene_daniel',cat:'scene',name:'Daniel in the Lions\' Den',ref:'Daniel 6',desc:'Daniel\'s faith shut the lions\' mouths. God protects those who trust Him.',icon:'🦁',cost:110,type:'background'},
+  {id:'scene_furnace',cat:'scene',name:'The Fiery Furnace',ref:'Daniel 3',desc:'Three men walked in the fire — and a fourth appeared with them.',icon:'🔥',cost:110,type:'background'},
+  {id:'scene_gethsemane',cat:'scene',name:'Garden of Gethsemane',ref:'Matthew 26',desc:'Jesus prays alone in the garden — "Not my will, but thine be done."',icon:'🌿',cost:100,type:'background'},
+  {id:'scene_tomb',cat:'scene',name:'The Empty Tomb',ref:'John 20',desc:'The stone is rolled away. The grave could not hold Him. He is risen.',icon:'🌅',cost:150,type:'background'},
+  {id:'scene_sinai',cat:'scene',name:'Moses on Mount Sinai',ref:'Exodus 19',desc:'Lightning and thunder. The mountain smokes. God descends in fire.',icon:'🏔️',cost:120,type:'background'},
+  {id:'scene_ruth',cat:'scene',name:'Ruth in the Fields',ref:'Ruth 2',desc:'Ruth gleans in the golden harvest — a picture of faithful love and provision.',icon:'🌾',cost:90,type:'background'},
+  // Companions
+  {id:'comp_eagle',cat:'companion',name:'Eagle Companion',ref:'Isaiah 40:31',desc:'"They shall mount up with wings as eagles." Soars across thy sky during sessions.',icon:'🦅',cost:110,type:'companion'},
+  {id:'comp_dove',cat:'companion',name:'Visiting Dove',ref:'Genesis 8:11',desc:'Brings an olive branch to thy resting sheep every 5 minutes. A living blessing.',icon:'🕊️',cost:130,type:'companion'},
+  // Sounds
+  {id:'sound_psalms',cat:'sound',name:'Psalms Chanting',ref:'Psalm 150:6',desc:'Ancient psalm chanting fills thy focus session with reverence.',icon:'🎵',cost:60,type:'sound'},
+  {id:'sound_rain',cat:'sound',name:'Still Rain & Thunder',ref:'Psalm 46:10',desc:'Gentle rain with distant thunder — stillness in the storm.',icon:'🌧️',cost:60,type:'sound'},
+  {id:'sound_waters',cat:'sound',name:'Still Waters',ref:'Psalm 23:2',desc:'A flowing river, birds, the breath of God over water.',icon:'🌊',cost:60,type:'sound'},
+  {id:'sound_bells',cat:'sound',name:'Cathedral Bells',ref:'Psalm 150:5',desc:'Deep resonant bells mark each completed session with glory.',icon:'🔔',cost:90,type:'sound'},
+  // Devotionals
+  {id:'dev_psalms',cat:'devotional',name:'40 Days in the Psalms',ref:'Psalm 1:1',desc:'A 40-day journey through the heart of David — praise, lament, and trust.',icon:'📖',cost:80,type:'devotional'},
+  {id:'dev_sermon',cat:'devotional',name:'Sermon on the Mount',ref:'Matthew 5-7',desc:'Walk through Jesus\' greatest teaching — 30 daily reflections.',icon:'🏔️',cost:80,type:'devotional'},
+  {id:'dev_women',cat:'devotional',name:'Women of the Bible',ref:'Various',desc:'Ruth, Esther, Mary, Deborah — 21 days with faithful women of Scripture.',icon:'🌸',cost:80,type:'devotional'},
+];
+const HONEY_ITEMS=[
+  {id:'honey_drop',name:'A Drop of Honey',duration:'3 days',effect:'Seeds ×2',desc:'A taste of sweetness — double seeds for 3 days.',price:'$0.99',days:3,mult:2},
+  {id:'honey_jar',name:'A Jar of Honey',duration:'1 week',effect:'Seeds ×2 + Bonus devotional',desc:'A full week of sweetness — double seeds and one bonus devotional daily.',price:'$1.99',days:7,mult:2},
+  {id:'honey_comb',name:'A Comb of Honey',duration:'2 weeks',effect:'Seeds ×3 + Garden glow',desc:'Two weeks of abundance — triple seeds and a golden glow on thy garden.',price:'$3.99',days:14,mult:3},
+  {id:'honey_pot',name:'A Pot of Honey',duration:'1 month',effect:'Seeds ×3 + 10 free Grain',desc:'A full month of blessing — triple seeds, garden glow, and 10 bonus Grain.',price:'$6.99',days:30,mult:3},
+];
+const GRAIN_PACKS=[
+  {id:'grain_handful',name:'A Handful of Grain',amount:30,price:'$0.99'},
+  {id:'grain_bundle',name:'A Bundle of Grain',amount:100,price:'$2.99'},
+  {id:'grain_basket',name:'A Basket of Grain',amount:250,price:'$5.99'},
+  {id:'grain_storehouse',name:'A Storehouse of Grain',amount:600,price:'$11.99'},
+];
+function bGrainShop(){
+  if(!isPremium()){
+    return`<div style="text-align:center;padding:24px 16px">
+      <div style="font-size:2.5rem;margin-bottom:12px">🌾</div>
+      <div style="font-family:'Lora',serif;font-size:1.1rem;font-weight:700;color:var(--moss);margin-bottom:6px">Grain Shop</div>
+      <div style="font-family:'Lora',serif;font-style:italic;font-size:0.8rem;color:var(--text-soft);line-height:1.6;margin-bottom:16px">"They that sow in tears shall reap in joy." — Psalm 126:5 KJV<br/><br/>The Grain Shop is available to Premium members. Upgrade once for $2.99 and unlock it forever.</div>
+      <button class="btn-premium" onclick="openPage('premium')">👑 Unlock Premium — $2.99 Forever</button>
+    </div>`;
+  }
+  const owned=S.grainOwned||[];
+  const equipped=S.grainEquipped||{};
+  const grain=S.grain||0;
+  const scenes=GRAIN_ITEMS.filter(i=>i.cat==='scene');
+  const companions=GRAIN_ITEMS.filter(i=>i.cat==='companion');
+  const sounds=GRAIN_ITEMS.filter(i=>i.cat==='sound');
+  const devos=GRAIN_ITEMS.filter(i=>i.cat==='devotional');
+  function itemCard(item){
+    const isOwned=owned.includes(item.id);
+    const isEquipped=equipped[item.type]===item.id;
+    const canAfford=grain>=item.cost;
+    return`<div class="grain-item">
+      <div class="gi-top">
+        <div class="gi-scene">${item.icon}</div>
+        <div style="flex:1">
+          <div class="gi-name">${item.name}</div>
+          <div class="gi-ref">📖 ${item.ref}</div>
+          <div class="gi-desc">${item.desc}</div>
+        </div>
+      </div>
+      <div class="gi-footer">
+        <div class="gi-cost">${isOwned?'✅ Owned':'🌾 '+item.cost+' Grain'}</div>
+        ${isOwned
+          ? `<button class="gi-btn ${isEquipped?'owned':'equip'}" onclick="equipGrain('${item.id}','${item.type}')">${isEquipped?'✨ Active':'Use'}</button>`
+          : `<button class="gi-btn buy" onclick="buyGrain('${item.id}')" ${canAfford?'':'disabled style="opacity:0.4;cursor:default"'}>${canAfford?'Buy':'Need '+item.cost+'🌾'}</button>`
+        }
+      </div>
+    </div>`;
+  }
+  return`<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;padding:10px 13px;background:linear-gradient(135deg,rgba(180,130,60,0.12),rgba(212,168,83,0.07));border-radius:12px;border:1px solid rgba(212,168,83,0.25)">
+    <div><div style="font-size:0.62rem;font-weight:800;color:var(--text-soft);text-transform:uppercase;letter-spacing:0.06em">Thy Grain</div><div style="font-family:'Lora',serif;font-size:1.4rem;font-weight:700;color:var(--earth)">${grain} 🌾</div></div>
+    <div style="display:flex;flex-direction:column;gap:5px">${GRAIN_PACKS.map(p=>`<button onclick="buyGrainPack('${p.id}')" style="padding:4px 10px;border-radius:14px;border:1.5px solid var(--gold);background:transparent;font-size:0.62rem;font-weight:800;color:var(--earth);cursor:pointer">+${p.amount} — ${p.price}</button>`).join('')}</div>
+  </div>
+  <div class="section-lbl">🎨 Biblical Scene Backgrounds</div>
+  ${scenes.map(itemCard).join('')}
+  <div class="section-lbl">🐾 Companions</div>
+  ${companions.map(itemCard).join('')}
+  <div class="section-lbl">🔔 Sacred Sounds</div>
+  ${sounds.map(itemCard).join('')}
+  <div class="section-lbl">📖 Devotional Journeys</div>
+  ${devos.map(itemCard).join('')}
+  <div class="section-lbl">🍯 Honey Elixir</div>
+  ${HONEY_ITEMS.map(h=>{
+    const active=S.honeyActive&&S.honeyExpiry&&Date.now()<S.honeyExpiry&&S.honeyActive===h.id;
+    return`<div class="honey-card">
+      <div class="hc-top"><span class="hc-icon">🍯</span><div><div class="hc-name">${h.name}</div><div class="hc-dur">${h.duration} · ${h.effect}</div></div></div>
+      <div class="hc-effect">${h.desc}</div>
+      <div class="hc-footer"><div class="hc-price">${h.price}</div>${active?`<span style="font-size:0.7rem;font-weight:800;color:var(--gold)">✨ Active</span>`:`<button class="hc-btn" onclick="buyHoney('${h.id}')">Buy Elixir</button>`}</div>
+    </div>`;
+  }).join('')}`;
+}
+function buyGrain(id){
+  cloudWarning(function(){
+    const item=GRAIN_ITEMS.find(i=>i.id===id);if(!item)return;
+    const grain=S.grain||0;
+    if(grain<item.cost){showToast('Not enough Grain! 🌾');return;}
+    if(!S.grainOwned)S.grainOwned=[];
+    S.grainOwned.push(id);S.grain-=item.cost;save();
+    openPage('grainshop');showToast('🌾 '+item.name+' unlocked!');
+  });
+}
+function equipGrain(id,type){
+  if(!S.grainEquipped)S.grainEquipped={};
+  if(S.grainEquipped[type]===id){delete S.grainEquipped[type];}
+  else{S.grainEquipped[type]=id;}
+  save();openPage('grainshop');
+  // Apply companion if selected
+  if(type==='companion'){
+    if(id==='comp_eagle')startEagle();
+    if(id==='comp_dove')startDoveVisits();
+  }
+}
+function buyGrainPack(id){
+  const pack=GRAIN_PACKS.find(p=>p.id===id);if(!pack)return;
+  cloudWarning(function(){
+    if(confirm('Purchase '+pack.name+' ('+pack.amount+' Grain) for '+pack.price+'?')){
+      if(!S.grain)S.grain=0;S.grain+=pack.amount;save();
+      openPage('grainshop');showToast('🌾 +'+pack.amount+' Grain added!');
+    }
+  });
+}
+function buyHoney(id){
+  const honey=HONEY_ITEMS.find(h=>h.id===id);if(!honey)return;
+  cloudWarning(function(){
+    if(confirm('Purchase '+honey.name+' for '+honey.price+'?\n\n'+honey.effect+' for '+honey.duration+'.')){
+      S.honeyActive=id;S.honeyExpiry=Date.now()+(honey.days*24*60*60*1000);S.honeyMult=honey.mult;save();
+      openPage('grainshop');showToast('🍯 '+honey.name+' activated!');
+    }
+  });
+}
+function getHoneyMult(){if(S.honeyActive&&S.honeyExpiry&&Date.now()<S.honeyExpiry)return S.honeyMult||1;return 1;}
+
+// ===== MERCH / BIBLE STORE =====
+function bShopStore(){
+  const isPrem=isPremium();
+  if(!isPrem){
+    return`<div style="text-align:center;padding:24px 16px">
+      <div style="font-size:2.5rem;margin-bottom:12px">🛒</div>
+      <div style="font-family:'Lora',serif;font-size:1.1rem;font-weight:700;color:var(--moss);margin-bottom:6px">Pasture Store</div>
+      <div style="font-family:'Lora',serif;font-style:italic;font-size:0.8rem;color:var(--text-soft);line-height:1.6;margin-bottom:16px">The Pasture Store is available to Premium members.<br/>Upgrade once for $2.99 and access it forever.</div>
+      <button class="btn-premium" onclick="openPage('premium')">👑 Unlock Premium — $2.99 Forever</button>
+    </div>`;
+  }
+  return`<div style="background:linear-gradient(135deg,var(--moss),var(--sage-dark));border-radius:16px;padding:16px;text-align:center;margin-bottom:16px;color:white">
+    <div style="font-family:'Lora',serif;font-size:1.1rem;font-weight:700;margin-bottom:4px">🛒 Pasture Store</div>
+    <div style="font-family:'Lora',serif;font-style:italic;font-size:0.74rem;color:rgba(255,255,255,0.8);line-height:1.5">"Buy the truth, and sell it not." — Proverbs 23:23 KJV</div>
+  </div>
+  <div style="background:linear-gradient(135deg,rgba(212,168,83,0.1),rgba(240,208,144,0.07));border-radius:12px;padding:11px;margin-bottom:14px;text-align:center;border:1px solid rgba(212,168,83,0.2)">
+    <div style="font-size:0.72rem;color:var(--text-mid);line-height:1.55">🌱 The Pasture Store is coming soon! We are carefully selecting KJV Bibles, Christian books, and Pasture-branded merchandise to offer. Every purchase supports the Pasture mission.</div>
+  </div>
+  <div class="merch-category">📖 KJV Bibles</div>
+  ${[
+    {icon:'📖',name:'KJV Compact Bible',desc:'Genuine leather, gilt-edged pages. Perfect for daily carry.',price:'Coming Soon'},
+    {icon:'📖',name:'KJV Large Print Bible',desc:'Comfort print edition with wide margins for notes.',price:'Coming Soon'},
+    {icon:'📖',name:'KJV Study Bible',desc:'Full concordance, maps, and verse-by-verse commentary.',price:'Coming Soon'},
+  ].map(m=>`<div class="merch-item"><div class="mi-thumb">${m.icon}</div><div style="flex:1"><div class="mi-name">${m.name}</div><div class="mi-desc">${m.desc}</div></div><div class="mi-price">${m.price}</div></div>`).join('')}
+  <div class="merch-category">📚 Christian Books</div>
+  ${[
+    {icon:'📚',name:'My Utmost for His Highest',desc:'Oswald Chambers — daily devotional classic.',price:'Coming Soon'},
+    {icon:'📚',name:'Pilgrim\'s Progress',desc:'John Bunyan — the greatest Christian allegory ever written.',price:'Coming Soon'},
+    {icon:'📚',name:'Mere Christianity',desc:'C.S. Lewis — a masterful defense of the Christian faith.',price:'Coming Soon'},
+  ].map(m=>`<div class="merch-item"><div class="mi-thumb">${m.icon}</div><div style="flex:1"><div class="mi-name">${m.name}</div><div class="mi-desc">${m.desc}</div></div><div class="mi-price">${m.price}</div></div>`).join('')}
+  <div class="merch-category">🌿 Pasture Merch</div>
+  ${[
+    {icon:'👕',name:'Pasture T-Shirt',desc:'"He maketh me to lie down in green pastures." — Psalm 23:2',price:'Coming Soon'},
+    {icon:'☕',name:'Pasture Mug',desc:'Start thy morning with the Word. 11oz ceramic mug.',price:'Coming Soon'},
+    {icon:'📓',name:'Prayer Journal',desc:'Lined journal with KJV verses. 200 pages.',price:'Coming Soon'},
+    {icon:'🎨',name:'Pasture Art Print',desc:'Garden scene illustration with Psalm 23. Frameable.',price:'Coming Soon'},
+  ].map(m=>`<div class="merch-item"><div class="mi-thumb">${m.icon}</div><div style="flex:1"><div class="mi-name">${m.name}</div><div class="mi-desc">${m.desc}</div></div><div class="mi-price">${m.price}</div></div>`).join('')}
+  <div style="text-align:center;margin-top:16px;font-family:'Lora',serif;font-style:italic;font-size:0.72rem;color:var(--text-soft);line-height:1.6">Want to be notified when the store opens?<br/>Follow us at <strong>pastureapp.org</strong> 🌿</div>`;
+}
+
+// ===== EAGLE & DOVE COMPANIONS =====
+let doveVisitTimer=null;
+function startEagle(){
+  // Eagle soars across sky every 45 seconds during a session
+  const el=document.createElement('div');
+  el.className='eagle-el';
+  el.style.top=(15+Math.random()*12)+'%';
+  el.innerHTML=`<svg width="52" height="32" viewBox="0 0 52 32" fill="none">
+    <path d="M26 18 Q18 8 4 6 Q14 12 16 18 Q18 10 26 8 Q34 10 36 18 Q38 12 48 6 Q34 8 26 18Z" fill="#c49a72" opacity="0.9"/>
+    <ellipse cx="26" cy="20" rx="8" ry="5" fill="#8b6b4a"/>
+    <circle cx="32" cy="16" r="2" fill="#5d3d1e"/>
+    <path d="M30 16 Q33 15 35 16" stroke="#3a2a1a" stroke-width="1" fill="none"/>
+  </svg>`;
+  document.body.appendChild(el);
+  setTimeout(()=>el.remove(),12100);
+}
+function startDoveVisits(){
+  if(doveVisitTimer)clearInterval(doveVisitTimer);
+  doveVisitTimer=setInterval(()=>{
+    if(!running)return;
+    spawnVisitingDove();
+  },5*60*1000); // every 5 minutes
+  // Show one immediately after 20 seconds
+  setTimeout(()=>{if(running)spawnVisitingDove();},20000);
+}
+function spawnVisitingDove(){
+  const el=document.createElement('div');
+  el.className='dove-visit-el';
+  el.style.cssText='position:fixed;top:32%;left:-60px;z-index:55;pointer-events:none;font-size:0;animation:doveVisit 8s ease-in-out forwards';
+  el.innerHTML=`<div style="position:relative">
+    <svg width="44" height="36" viewBox="0 0 44 36" fill="none">
+      <ellipse cx="22" cy="22" rx="11" ry="8" fill="white" opacity="0.95"/>
+      <path d="M22 22 Q10 14 2 18 Q12 16 14 22Z" fill="white" opacity="0.9"/>
+      <path d="M22 22 Q34 14 42 18 Q32 16 30 22Z" fill="white" opacity="0.9"/>
+      <circle cx="30" cy="18" r="2.5" fill="white" opacity="0.95"/>
+      <circle cx="31" cy="17.5" r="1" fill="#3a2a1a"/>
+      <path d="M32 18 Q35 17 36 18" stroke="#c49a72" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+      <!-- olive branch -->
+      <path d="M18 26 Q15 29 12 28 Q14 27 16 26" stroke="#4e7a56" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="13" cy="28" rx="2.5" ry="1.5" fill="#6aaa6a" transform="rotate(-20 13 28)"/>
+      <ellipse cx="16" cy="26.5" rx="2" ry="1.2" fill="#5a9a5a" transform="rotate(10 16 26)"/>
+    </svg>
+  </div>`;
+  document.body.appendChild(el);
+  setTimeout(()=>el.remove(),8100);
+}
+// Hook companions into timer
+const _origStartT=startT;
+// ===== PREMIUM / GRAIN STATE INIT =====
+function initPremiumState(){
+  if(!S.grain)S.grain=0;
+  if(!S.grainOwned)S.grainOwned=[];
+  if(!S.grainEquipped)S.grainEquipped={};
+  // Start equipped companions
+  if(isPremium()&&S.grainEquipped){
+    if(S.grainEquipped.companion==='comp_dove')startDoveVisits();
+  }
+}
+// ===== SCENE BUILDERS =====
 function buildStars(){const w=document.getElementById('starsWrap');for(let i=0;i<36;i++){const s=document.createElement('div');s.className='star';const sz=Math.random()*2.2+0.8;s.style.cssText='width:'+sz+'px;height:'+sz+'px;left:'+(Math.random()*100)+'%;top:'+(Math.random()*62)+'%;animation-delay:'+(Math.random()*3)+'s;animation-duration:'+(1.5+Math.random()*2)+'s';w.appendChild(s);}}
 function buildRain(){const c=document.getElementById('rainWrap');for(let i=0;i<52;i++){const d=document.createElement('div');d.className='rdrop';const h=Math.random()*72+18;d.style.cssText='left:'+(Math.random()*100)+'%;height:'+h+'px;animation-duration:'+(0.5+Math.random()*0.5)+'s;animation-delay:'+(Math.random()*0.8)+'s';c.appendChild(d);}}
 function buildGrass(){const c=document.getElementById('grassC');for(let i=0;i<26;i++){const g=document.createElement('div');g.className='gblade';const h=Math.random()*15+8;g.style.cssText='left:'+(Math.random()*100)+'%;height:'+h+'px;background:hsl('+(112+Math.random()*18)+',47%,'+(42+Math.random()*13)+'%);animation-duration:'+(2+Math.random()*2)+'s;animation-delay:'+(Math.random()*2)+'s';c.appendChild(g);}}
@@ -1316,6 +1713,7 @@ function init(){
   curLang=S.lang||'en';selectedLang=curLang;
   if(!S.fruitSeeds)S.fruitSeeds={};
   if(!S.fruitPassages)S.fruitPassages={};
+  initPremiumState();
   if(S.firstOpen||!S.name){showScreen('langScreen');}else{showMoodScreen();}
   sLeft=cDur*60;tSecs=sLeft;updDisp();updVerse();updAll();
   applyTheme(S.equipped.theme||'meadow');
